@@ -6,6 +6,7 @@ import { KeynoteSpeakers } from "@/components/keynote-speakers"
 import { Schedule } from "@/components/schedule"
 import { Organizers } from "@/components/organizers"
 import { Committee } from "@/components/committee"
+import { HostCity } from "@/components/host-city"
 import { SiteFooter } from "@/components/site-footer"
 
 export default function Page() {
@@ -19,6 +20,7 @@ export default function Page() {
       <Schedule />
       <Organizers />
       <Committee />
+      <HostCity />
       <SiteFooter />
     </main>
   )

@@ -11,6 +11,7 @@ const links = [
   { href: "#schedule", label: "Schedule" },
   { href: "#organizers", label: "Organizers" },
   { href: "#committee", label: "Committee" },
+  { href: "#venue", label: "Venue" },
 ]
 
 export function SiteNav() {
