@@ -2,22 +2,12 @@ import { SectionHeading } from "./section-heading"
 
 export function About() {
   return (
-    <section id="about" className="relative isolate overflow-hidden border-t border-border/60">
-      <div className="absolute inset-0 -z-10">
-        <img
-          src="/shenyang/mukden-palace.jpg"
-          alt=""
-          aria-hidden
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-background/75" />
-      </div>
-
+    <section id="about" className="border-b border-border/60 bg-background">
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
-        <SectionHeading eyebrow="About" title="About the Workshop" />
+        <SectionHeading eyebrow="About" title="About the workshop" />
 
-        <div className="mt-10 grid gap-10 md:grid-cols-5">
-          <div className="md:col-span-3 space-y-5 text-pretty text-base leading-relaxed text-muted-foreground md:text-[17px]">
+        <div className="mt-14 grid gap-12 md:grid-cols-5">
+          <div className="md:col-span-3 space-y-5 text-pretty text-[15.5px] leading-[1.75] text-muted-foreground md:text-[17px]">
             <p>
               Medical time series analytics — modeling, mining, and interpreting longitudinal physiological and clinical
               data — plays a vital role in modern health applications. The rapid growth of digital health technologies
@@ -38,8 +28,8 @@ export function About() {
           </div>
 
           <aside className="md:col-span-2">
-            <div className="academic-card p-6">
-              <h3 className="font-serif text-2xl text-foreground">At a glance</h3>
+            <div className="rounded-md border border-border bg-card p-6 md:p-7">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">At a glance</p>
               <dl className="mt-5 divide-y divide-border text-sm">
                 <div className="flex items-center justify-between py-3">
                   <dt className="text-muted-foreground">Format</dt>
@@ -50,16 +40,16 @@ export function About() {
                   <dd className="font-medium text-foreground">2</dd>
                 </div>
                 <div className="flex items-center justify-between py-3">
-                  <dt className="text-muted-foreground">Accepted Papers</dt>
+                  <dt className="text-muted-foreground">Accepted papers</dt>
                   <dd className="font-medium text-foreground">≥ 8</dd>
                 </div>
                 <div className="flex items-center justify-between py-3">
-                  <dt className="text-muted-foreground">Expected Attendees</dt>
+                  <dt className="text-muted-foreground">Expected attendees</dt>
                   <dd className="font-medium text-foreground">50+</dd>
                 </div>
                 <div className="flex items-center justify-between py-3">
-                  <dt className="text-muted-foreground">Special Award</dt>
-                  <dd className="font-medium text-foreground">Best Paper Award</dd>
+                  <dt className="text-muted-foreground">Special award</dt>
+                  <dd className="font-medium text-foreground">Best Paper</dd>
                 </div>
               </dl>
             </div>

@@ -11,59 +11,62 @@ const pc = [
   { name: "Yanda Meng", affiliation: "KAUST, Saudi Arabia" },
 ]
 
+const relatedWorkshops = [
+  { name: "STIntelligence@CIKM'25", stats: "~20 submissions · 5 acceptances · 50+ attendees" },
+  { name: "CREATE@MICCAI'25", stats: "10 acceptances · 10 keynotes · 60+ attendees" },
+  { name: "EARTH@MICCAI'24", stats: "5 acceptances · 7 keynotes · 30+ attendees" },
+]
+
 export function Committee() {
   return (
-    <section id="committee" className="border-t border-border/60 bg-secondary/40">
+    <section id="committee" className="border-b border-border/60 bg-background">
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading
           eyebrow="Committee"
-          title="Program Committee"
+          title="Program committee"
           description="Our committee encompasses members from various countries and regions, including scholars and industry experts from academia, industry, and hospitals."
         />
 
-        <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-2">
+        <ul className="mt-12 grid gap-x-10 gap-y-3 md:grid-cols-2">
           {pc.map((m) => (
             <li
               key={m.name}
-              className="academic-card flex items-baseline justify-between gap-4 px-5 py-4"
+              className="flex items-baseline justify-between gap-4 border-b border-border py-3"
             >
               <span className="font-medium text-foreground">{m.name}</span>
-              <span className="text-right text-sm text-muted-foreground">{m.affiliation}</span>
+              <span className="text-right text-[13.5px] text-muted-foreground">{m.affiliation}</span>
             </li>
           ))}
         </ul>
 
-        {/* Web Chair */}
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
-          <div className="academic-card flex items-center gap-5 p-6 md:p-8">
-            <img
-              src="/organizers/bochuang-yang.jpg"
-              alt="Bochuang Yang"
-              className="h-24 w-24 flex-shrink-0 rounded-full object-cover object-[90%_60%] ring-1 ring-border"
-            />
-            <div>
-              <p className="text-xs font-medium uppercase tracking-widest text-primary">Web Chair</p>
-              <h3 className="mt-2 font-serif text-2xl text-foreground">Bochuang Yang</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Maintaining the workshop website and communications.
-              </p>
+        {/* Web Chair + Related Workshops */}
+        <div className="mt-16 grid gap-10 md:grid-cols-2">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Web Chair</p>
+            <div className="mt-5 flex items-center gap-5">
+              <img
+                src="/organizers/bochuang-yang.jpg"
+                alt="Bochuang Yang"
+                className="h-20 w-20 flex-shrink-0 rounded-full object-cover object-[90%_60%] border border-border"
+              />
+              <div>
+                <h3 className="font-serif text-xl text-foreground">Bochuang Yang</h3>
+                <p className="mt-1 text-[14px] text-muted-foreground">
+                  Maintaining the workshop website and communications.
+                </p>
+              </div>
             </div>
           </div>
-          <div className="academic-card p-6 md:p-8">
-            <p className="text-xs font-medium uppercase tracking-widest text-primary">Related Workshops</p>
-            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              <li>
-                <span className="text-foreground">STIntelligence@CIKM&apos;25</span> · ~20 submissions · 5 acceptances ·
-                50+ attendees
-              </li>
-              <li>
-                <span className="text-foreground">CREATE@MICCAI&apos;25</span> · 10 acceptances · 10 keynotes · 60+
-                attendees
-              </li>
-              <li>
-                <span className="text-foreground">EARTH@MICCAI&apos;24</span> · 5 acceptances · 7 keynotes · 30+
-                attendees
-              </li>
+
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Related workshops</p>
+            <ul className="mt-5 space-y-3">
+              {relatedWorkshops.map((w) => (
+                <li key={w.name} className="text-[14px] leading-relaxed">
+                  <span className="text-foreground">{w.name}</span>
+                  <span className="text-muted-foreground"> · {w.stats}</span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

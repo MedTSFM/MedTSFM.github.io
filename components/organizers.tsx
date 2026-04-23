@@ -8,7 +8,6 @@ type Person = {
   href?: string
 }
 
-// Replace each `photo` path by placing a matching image file at public/<path>
 const organizers: Person[] = [
   {
     name: "Chenxi Liu",
@@ -62,27 +61,27 @@ const organizers: Person[] = [
 
 export function Organizers() {
   return (
-    <section id="organizers" className="border-t border-border/60 bg-background">
+    <section id="organizers" className="border-b border-border/60 bg-background">
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
-        <SectionHeading eyebrow="Organizers" title="Workshop Organizers" />
+        <SectionHeading eyebrow="Organizers" title="Workshop organizers" />
 
-        <ul className="mt-12 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <ul className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {organizers.map((p) => (
-            <li key={p.name} className="group flex flex-col items-center text-center">
-              {/* Photo frame — replace the file at `photo` to show a real portrait */}
-              <div className="relative h-40 w-40 overflow-hidden rounded-full border border-border bg-muted shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md group-hover:ring-2 group-hover:ring-primary/30">
+            <li key={p.name} className="flex flex-col items-center text-center">
+              <div className="relative h-36 w-36 overflow-hidden rounded-full border border-border bg-muted">
                 <img
                   src={p.photo || "/placeholder.svg"}
                   alt={p.name}
                   className="h-full w-full object-cover"
                 />
-                <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-border/60" />
               </div>
 
-              <h3 className="mt-5 font-serif text-xl text-foreground">{p.name}</h3>
-              <p className="mt-1 text-xs font-medium uppercase tracking-widest text-primary">{p.title}</p>
+              <h3 className="mt-5 font-serif text-lg text-foreground">{p.name}</h3>
+              <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-primary">
+                {p.title}
+              </p>
               {p.affiliation && (
-                <p className="mt-1 text-sm leading-snug text-muted-foreground">{p.affiliation}</p>
+                <p className="mt-2 text-[13px] leading-snug text-muted-foreground">{p.affiliation}</p>
               )}
             </li>
           ))}

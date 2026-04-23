@@ -17,25 +17,24 @@ export function SiteNav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-6">
-        <a href="#top" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary font-semibold text-primary-foreground">
+    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-md">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 md:px-6">
+        <a href="#top" className="flex items-center gap-2.5">
+          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary font-serif text-base text-primary-foreground">
             M
           </div>
           <div className="flex flex-col leading-tight">
             <span className="text-sm font-semibold tracking-tight text-foreground">MedTSFM</span>
-            <span className="text-[10px] uppercase tracking-wider text-muted-foreground">ICDM 2026</span>
+            <span className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground">ICDM 2026</span>
           </div>
         </a>
 
-        {/* Pill-shaped nav menu */}
-        <ul className="hidden items-center gap-1 rounded-full border border-border bg-card/80 p-1 shadow-sm md:flex">
+        <ul className="hidden items-center gap-7 md:flex">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium text-foreground/80 transition-all hover:-translate-y-0.5 hover:bg-primary hover:text-primary-foreground hover:shadow-sm"
+                className="text-[13.5px] font-medium text-muted-foreground transition-colors hover:text-primary"
               >
                 {l.label}
               </a>
@@ -65,7 +64,7 @@ export function SiteNav() {
               <a
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-md px-3 py-2 text-sm font-medium text-foreground/80 hover:bg-primary hover:text-primary-foreground"
+                className="block rounded-md px-3 py-2 text-sm font-medium text-foreground/80 hover:bg-secondary hover:text-primary"
               >
                 {l.label}
               </a>
