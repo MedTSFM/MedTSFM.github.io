@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Calendar, Clock, MapPin, ArrowLeft, Printer } from "lucide-react"
+import { Calendar, Clock, MapPin, ArrowLeft } from "lucide-react"
+// 引入刚刚创建的 Client Component (请根据您的实际路径调整 import)
+import PrintButton from "@/components/PrintButton" 
 
 export const metadata: Metadata = {
   title: "Call for Papers · MedTSFM @ IEEE ICDM 2026",
@@ -27,17 +29,8 @@ export default function PosterPage() {
           Back to workshop site
         </Link>
 
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault()
-            if (typeof window !== "undefined") window.print()
-          }}
-          className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-secondary"
-        >
-          <Printer className="h-3.5 w-3.5" />
-          Print / Save as PDF
-        </a>
+        {/* 这里使用抽离出来的客户端组件 */}
+        <PrintButton />
       </div>
 
       {/* Poster sheet */}
