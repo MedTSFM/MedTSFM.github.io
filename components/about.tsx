@@ -2,7 +2,7 @@ import { SectionHeading } from "./section-heading"
 
 export function About() {
   return (
-    <section id="about" className="relative isolate overflow-hidden border-t border-border/60 bg-background">
+    <section id="about" className="relative isolate overflow-hidden border-t border-border/60">
       <div className="absolute inset-0 -z-10">
         <img
           src="/shenyang/mukden-palace.jpg"
@@ -10,7 +10,7 @@ export function About() {
           aria-hidden
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/88 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-background/75" />
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">

@@ -2,15 +2,15 @@ import { MapPin } from "lucide-react"
 
 export function SiteFooter() {
   return (
-    <footer className="relative isolate overflow-hidden border-t border-border/60 bg-secondary/50">
+    <footer className="relative isolate overflow-hidden border-t border-border/60">
       <div className="absolute inset-0 -z-10">
         <img
           src="/shenyang/zhongshan-square.jpg"
           alt=""
           aria-hidden
-          className="h-full w-full object-cover opacity-[0.08]"
+          className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/60 to-background" />
+        <div className="absolute inset-0 bg-secondary/75" />
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-14 md:px-6">

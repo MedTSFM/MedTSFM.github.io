@@ -19,9 +19,9 @@ export function Schedule() {
           src="/shenyang/north-tomb.jpg"
           alt=""
           aria-hidden
-          className="h-full w-full object-cover opacity-[0.06]"
+          className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+        <div className="absolute inset-0 bg-background/75" />
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">

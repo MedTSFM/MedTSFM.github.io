@@ -13,7 +13,7 @@ const pc = [
 
 export function Committee() {
   return (
-    <section id="committee" className="relative isolate overflow-hidden border-t border-border/60 bg-secondary/40">
+    <section id="committee" className="relative isolate overflow-hidden border-t border-border/60">
       <div className="absolute inset-0 -z-10">
         <img
           src="/shenyang/winter-park.jpg"
@@ -21,7 +21,7 @@ export function Committee() {
           aria-hidden
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-secondary/85 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-secondary/70" />
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
