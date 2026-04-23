@@ -21,15 +21,15 @@ const dates = [
 export function CallForPapers() {
   return (
     <section id="cfp" className="relative isolate border-t border-border/60 overflow-hidden">
-      {/* Subtle background */}
+      {/* Shenyang skyline background */}
       <div className="absolute inset-0 -z-10">
         <img
           src="/shenyang/skyline.jpg"
           alt=""
           aria-hidden
-          className="h-full w-full object-cover opacity-[0.08]"
+          className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+        <div className="absolute inset-0 bg-background/78" />
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">

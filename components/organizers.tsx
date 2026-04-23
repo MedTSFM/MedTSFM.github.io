@@ -62,17 +62,7 @@ const organizers: Person[] = [
 
 export function Organizers() {
   return (
-    <section id="organizers" className="relative isolate overflow-hidden border-t border-border/60">
-      <div className="absolute inset-0 -z-10">
-        <img
-          src="/shenyang/olympic-center.jpg"
-          alt=""
-          aria-hidden
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-background/75" />
-      </div>
-
+    <section id="organizers" className="border-t border-border/60 bg-background">
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading eyebrow="Organizers" title="Workshop Organizers" />
 
