@@ -27,7 +27,18 @@ export function About() {
             </p>
           </div>
 
-          <aside className="md:col-span-2">
+          <aside className="md:col-span-2 space-y-5">
+            <figure className="overflow-hidden rounded-md border border-border bg-card">
+              <img
+                src="/shenyang/mukden-palace.jpg"
+                alt="Mukden Palace in Shenyang, the host city of ICDM 2026"
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <figcaption className="flex items-center justify-between border-t border-border px-4 py-2.5 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+                <span>Host city</span>
+                <span className="text-foreground/80">Shenyang</span>
+              </figcaption>
+            </figure>
             <div className="rounded-md border border-border bg-card p-6 md:p-7">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">At a glance</p>
               <dl className="mt-5 divide-y divide-border text-sm">

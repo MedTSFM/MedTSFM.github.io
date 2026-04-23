@@ -27,7 +27,24 @@ export function CallForPapers() {
           description="We invite original research contributions on all aspects of medical time series analytics and foundation models. Selected papers will be invited for extended submission to a special journal issue."
         />
 
-        <div className="mt-14 space-y-12">
+        {/* Subtle Shenyang accent band */}
+        <figure className="mt-12 overflow-hidden rounded-md border border-border">
+          <div className="relative aspect-[24/5]">
+            <img
+              src="/shenyang/skyline.jpg"
+              alt=""
+              aria-hidden
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/10 to-background/70" />
+            <figcaption className="absolute inset-x-0 bottom-0 flex items-center justify-between px-5 py-3 text-[11px] uppercase tracking-[0.18em] text-foreground/80">
+              <span>IEEE ICDM 2026</span>
+              <span>Shenyang · China</span>
+            </figcaption>
+          </div>
+        </figure>
+
+        <div className="mt-12 space-y-12">
           {/* Theme & Topics */}
           <div>
             <h3 className="font-serif text-xl text-foreground md:text-2xl">Theme and topics</h3>
