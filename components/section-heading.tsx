@@ -2,24 +2,36 @@ export function SectionHeading({
   eyebrow,
   title,
   description,
+  align = "left",
 }: {
   eyebrow?: string
   title: string
   description?: string
+  align?: "left" | "center"
 }) {
+  const isCenter = align === "center"
   return (
-    <div className="max-w-3xl">
+    <div className={isCenter ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
       {eyebrow && (
-        <div className="mb-3 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-widest text-primary">
-          <span className="h-px w-6 bg-primary/60" aria-hidden />
+        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
           {eyebrow}
-        </div>
+        </p>
       )}
-      <h2 className="border-l-4 border-primary pl-4 font-serif text-balance text-3xl leading-tight tracking-tight text-foreground md:text-4xl">
+      <h2 className="font-serif text-balance text-3xl font-normal leading-tight tracking-tight text-foreground md:text-[2.6rem]">
         {title}
       </h2>
+      <div
+        className={
+          isCenter
+            ? "mx-auto mt-5 h-px w-16 bg-primary"
+            : "mt-5 h-px w-16 bg-primary"
+        }
+        aria-hidden
+      />
       {description && (
-        <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">{description}</p>
+        <p className="mt-6 text-pretty text-base leading-relaxed text-muted-foreground md:text-[17px]">
+          {description}
+        </p>
       )}
     </div>
   )

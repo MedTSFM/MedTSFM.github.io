@@ -1,38 +1,31 @@
 import { SectionHeading } from "./section-heading"
-import { Sparkles } from "lucide-react"
 
 export function KeynoteSpeakers() {
   return (
-    <section id="keynotes" className="border-t border-border/60 bg-background">
+    <section id="keynotes" className="border-b border-border/60 bg-background">
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading
           eyebrow="Keynotes"
-          title="Keynote Speakers"
-          description="We are committed to inviting distinguished experts from around the globe with prestigious experience in time series analytics and AI for Health."
+          title="Keynote speakers"
+          description="We are committed to inviting distinguished experts from around the globe with prestigious experience in time series analytics and AI for health."
         />
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          {/* Coming soon cards — keep two placeholders to match the 2 keynotes mentioned in the proposal */}
+        <div className="mt-14 grid gap-10 md:grid-cols-2">
           {[1, 2].map((i) => (
-            <div
-              key={i}
-              className="group relative flex items-center gap-5 overflow-hidden rounded-[10px] border-2 border-dashed border-border bg-card p-6 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-md"
-            >
-              <div className="flex h-20 w-20 flex-none items-center justify-center rounded-full border border-border bg-muted">
-                <Sparkles className="h-6 w-6 text-muted-foreground" aria-hidden />
+            <div key={i} className="flex items-start gap-6">
+              <div className="flex h-24 w-24 flex-none items-center justify-center rounded-full border border-dashed border-border bg-secondary text-muted-foreground">
+                <span className="font-serif text-xl">{i}</span>
               </div>
-              <div className="min-w-0">
-                <p className="text-sm font-medium uppercase tracking-widest text-accent">Keynote #{i}</p>
-                <h3 className="mt-1 font-serif text-2xl text-foreground">Coming soon</h3>
-                <p className="mt-1 text-sm text-muted-foreground">Speaker announcement to be released.</p>
+              <div className="min-w-0 pt-1">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Keynote #{i}</p>
+                <h3 className="mt-2 font-serif text-2xl text-foreground">To be announced</h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
+                  Speaker and talk title will be released shortly. More invited speakers are coming soon.
+                </p>
               </div>
             </div>
           ))}
         </div>
-
-        <p className="mt-8 text-sm text-muted-foreground">
-          More speakers will be announced soon. Stay tuned for updates.
-        </p>
       </div>
     </section>
   )
