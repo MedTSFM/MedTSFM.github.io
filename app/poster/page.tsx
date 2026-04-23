@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Calendar, Clock, MapPin, ArrowLeft } from "lucide-react"
 // 引入刚刚创建的 Client Component (请根据您的实际路径调整 import)
-import PrintButton from "@/components/PrintButton" 
+import PrintButton from "./PrintButton"
 
 export const metadata: Metadata = {
   title: "Call for Papers · MedTSFM @ IEEE ICDM 2026",
