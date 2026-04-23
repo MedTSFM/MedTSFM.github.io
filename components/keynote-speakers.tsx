@@ -3,7 +3,17 @@ import { Sparkles } from "lucide-react"
 
 export function KeynoteSpeakers() {
   return (
-    <section id="keynotes" className="border-t border-border/60 bg-background">
+    <section id="keynotes" className="relative isolate overflow-hidden border-t border-border/60 bg-background">
+      <div className="absolute inset-0 -z-10">
+        <img
+          src="/shenyang/liaoning-tower.jpg"
+          alt=""
+          aria-hidden
+          className="h-full w-full object-cover opacity-[0.06]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+      </div>
+
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading
           eyebrow="Keynotes"

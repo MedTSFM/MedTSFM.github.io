@@ -13,7 +13,17 @@ const pc = [
 
 export function Committee() {
   return (
-    <section id="committee" className="border-t border-border/60 bg-secondary/40">
+    <section id="committee" className="relative isolate overflow-hidden border-t border-border/60 bg-secondary/40">
+      <div className="absolute inset-0 -z-10">
+        <img
+          src="/shenyang/winter-park.jpg"
+          alt=""
+          aria-hidden
+          className="h-full w-full object-cover opacity-[0.08]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-secondary/40 via-secondary/50 to-secondary/40" />
+      </div>
+
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading
           eyebrow="Committee"
