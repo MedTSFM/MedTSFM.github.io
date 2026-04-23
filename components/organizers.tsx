@@ -51,12 +51,6 @@ const organizers: Person[] = [
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/gaofeng-meng.jpg",
   },
-  {
-    name: "Junyu Chen",
-    title: "Organizer",
-    affiliation: "",
-    photo: "/organizers/junyu-chen.jpg",
-  },
 ]
 
 export function Organizers() {

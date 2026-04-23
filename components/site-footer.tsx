@@ -31,8 +31,16 @@ export function SiteFooter() {
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center">
           <p>© {new Date().getFullYear()} MedTSFM Workshop. All rights reserved.</p>
-          <p>
-            Website maintained by <span className="text-foreground">Bochuang Yang</span> (Web Chair).
+          <p className="flex items-center gap-4">
+            <a
+              href="/poster/"
+              className="text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-primary"
+            >
+              Call for papers poster
+            </a>
+            <span>
+              Website maintained by <span className="text-foreground">Bochuang Yang</span> (Web Chair).
+            </span>
           </p>
         </div>
       </div>
