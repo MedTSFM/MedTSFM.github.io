@@ -19,9 +19,9 @@ export function Committee() {
           src="/shenyang/winter-park.jpg"
           alt=""
           aria-hidden
-          className="h-full w-full object-cover opacity-[0.08]"
+          className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-secondary/40 via-secondary/50 to-secondary/40" />
+        <div className="absolute inset-0 bg-secondary/85 backdrop-blur-[2px]" />
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
