@@ -39,21 +39,40 @@ export function Committee() {
           ))}
         </ul>
 
-        {/* Web Chair + Related Workshops */}
+        {/* Chairs + Related Workshops */}
         <div className="mt-16 grid gap-10 md:grid-cols-2">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Web Chair</p>
-            <div className="mt-5 flex items-center gap-5">
-              <img
-                src="/organizers/bochuang-yang.jpg"
-                alt="Bochuang Yang"
-                className="h-20 w-20 flex-shrink-0 rounded-full object-cover object-[90%_60%] border border-border"
-              />
-              <div>
-                <h3 className="font-serif text-xl text-foreground">Bochuang Yang</h3>
-                <p className="mt-1 text-[14px] text-muted-foreground">
-                  Maintaining the workshop website and communications.
-                </p>
+          <div className="space-y-8">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Web Chair</p>
+              <div className="mt-5 flex items-center gap-5">
+                <img
+                  src="/organizers/bochuang-yang.jpg"
+                  alt="Bochuang Yang"
+                  className="h-20 w-20 flex-shrink-0 rounded-full object-cover object-[90%_60%] border border-border"
+                />
+                <div>
+                  <h3 className="font-serif text-xl text-foreground">Bochuang Yang</h3>
+                  <p className="mt-1 text-[14px] text-muted-foreground">
+                    Maintaining the workshop website and communications.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Publicity Chair</p>
+              <div className="mt-5 flex items-center gap-5">
+                <img
+                  src="/organizers/junyu-chen.jpg"
+                  alt="Junyu Chen"
+                  className="h-20 w-20 flex-shrink-0 rounded-full object-cover border border-border"
+                />
+                <div>
+                  <h3 className="font-serif text-xl text-foreground">Junyu Chen</h3>
+                  <p className="mt-1 text-[14px] text-muted-foreground">
+                    Leading workshop publicity and outreach across the community.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
