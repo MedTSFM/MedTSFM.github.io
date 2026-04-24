@@ -7,6 +7,8 @@ type Person = {
   affiliation: string
   photo: string
   href?: string
+  photoClass?: string
+  photoFrameClass?: string
 }
 
 const organizers: Person[] = [
@@ -23,13 +25,17 @@ const organizers: Person[] = [
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/jinlin-wu.png",
     href: "https://kimwu1994.github.io/jinlin.github.io/",
+    photoClass: "object-contain",
+    photoFrameClass: "bg-white",
   },
   {
     name: "Kang Zhou",
     title: "General Chair · Assistant Professor",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
-    photo: "/organizers/kang-zhou.jpg",
-    href: "https://scholar.google.com/citations?user=REPLACE_KANG_ZHOU",
+    photo: "/organizers/kang-zhou.png",
+    href: "https://charleskangzhou.github.io/",
+    photoClass: "object-contain",
+    photoFrameClass: "bg-white",
   },
   {
     name: "Dong Yi",
@@ -70,11 +76,18 @@ export function Organizers() {
         <ul className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {organizers.map((p) => (
             <li key={p.name} className="flex flex-col items-center text-center">
-              <div className="relative h-36 w-36 overflow-hidden rounded-full border border-border bg-muted">
+              <div
+                className={[
+                  "relative h-36 w-36 overflow-hidden rounded-full border border-border bg-muted",
+                  p.photoFrameClass,
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
+              >
                 <img
                   src={p.photo || "/placeholder.svg"}
                   alt={p.name}
-                  className="h-full w-full object-cover"
+                  className={["h-full w-full object-cover", p.photoClass].filter(Boolean).join(" ")}
                 />
               </div>
 
