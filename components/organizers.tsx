@@ -25,7 +25,7 @@ const organizers: Person[] = [
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/jinlin-wu.png",
     href: "https://kimwu1994.github.io/jinlin.github.io/",
-    photoClass: "object-contain",
+    photoClass: "object-contain scale-[0.8]",
     photoFrameClass: "bg-white",
   },
   {
@@ -34,7 +34,7 @@ const organizers: Person[] = [
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/kang-zhou.png",
     href: "https://charleskangzhou.github.io/",
-    photoClass: "object-contain",
+    photoClass: "object-contain scale-[0.8]",
     photoFrameClass: "bg-white",
   },
   {
