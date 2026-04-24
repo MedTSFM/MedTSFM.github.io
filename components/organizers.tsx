@@ -25,7 +25,7 @@ const organizers: Person[] = [
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/jinlin-wu.png",
     href: "https://kimwu1994.github.io/jinlin.github.io/",
-    photoClass: "object-contain scale-[0.8]",
+    photoClass: "object-contain",
     photoFrameClass: "bg-white",
   },
   {
@@ -34,22 +34,26 @@ const organizers: Person[] = [
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/kang-zhou.png",
     href: "https://charleskangzhou.github.io/",
-    photoClass: "object-contain scale-[0.8]",
+    photoClass: "object-contain",
     photoFrameClass: "bg-white",
   },
   {
     name: "Dong Yi",
     title: "General Chair · Senior Scientist",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
-    photo: "/organizers/dong-yi.jpg",
-    href: "https://scholar.google.com/citations?user=REPLACE_DONG_YI",
+    photo: "/organizers/dong-yi.png",
+    href: "https://scholar.google.com/citations?user=iga8Z4AAAAAJ&hl=en",
+    photoClass: "object-contain",
+    photoFrameClass: "bg-white",
   },
   {
     name: "Zhen Lei",
     title: "General Chair · Professor, IEEE/IAPR Fellow",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
-    photo: "/organizers/zhen-lei.jpg",
-    href: "https://scholar.google.com/citations?user=REPLACE_ZHEN_LEI",
+    photo: "/organizers/zhen-lei.png",
+    href: "https://scholar.google.com/citations?user=cuJ3QG8AAAAJ&hl=en",
+    photoClass: "object-contain",
+    photoFrameClass: "bg-white",
   },
   {
     name: "Hongbin Liu",
@@ -78,7 +82,7 @@ export function Organizers() {
             <li key={p.name} className="flex flex-col items-center text-center">
               <div
                 className={[
-                  "relative h-36 w-36 overflow-hidden rounded-full border border-border bg-muted",
+                  "relative aspect-[4/5] w-36 overflow-hidden rounded-md border border-border bg-white",
                   p.photoFrameClass,
                 ]
                   .filter(Boolean)
