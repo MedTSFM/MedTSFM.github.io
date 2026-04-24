@@ -59,15 +59,19 @@ const organizers: Person[] = [
     name: "Hongbin Liu",
     title: "General Chair · Director",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
-    photo: "/organizers/hongbin-liu.jpg",
-    href: "https://scholar.google.com/citations?user=REPLACE_HONGBIN_LIU",
+    photo: "/organizers/hongbin-liu.png",
+    href: "https://scholar.google.com/citations?user=ybmGRfIAAAAJ&hl=en",
+    photoClass: "object-contain",
+    photoFrameClass: "bg-white",
   },
   {
     name: "Gaofeng Meng",
     title: "General Chair · Professor",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
-    photo: "/organizers/gaofeng-meng.jpg",
-    href: "https://scholar.google.com/citations?user=REPLACE_GAOFENG_MENG",
+    photo: "/organizers/gaofeng-meng.png",
+    href: "https://people.ucas.edu.cn/~gfmeng",
+    photoClass: "object-contain",
+    photoFrameClass: "bg-white",
   },
 ]
 
