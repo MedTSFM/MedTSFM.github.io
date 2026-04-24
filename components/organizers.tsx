@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react"
 import { SectionHeading } from "./section-heading"
 
 type Person = {
@@ -14,42 +15,49 @@ const organizers: Person[] = [
     title: "General Chair · Assistant Professor",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/chenxi-liu.jpg",
+    href: "https://scholar.google.com/citations?user=REPLACE_CHENXI_LIU",
   },
   {
     name: "Jinlin Wu",
     title: "General Chair · Assistant Professor",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/jinlin-wu.jpg",
+    href: "https://scholar.google.com/citations?user=REPLACE_JINLIN_WU",
   },
   {
     name: "Kang Zhou",
     title: "General Chair · Assistant Professor",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/kang-zhou.jpg",
+    href: "https://scholar.google.com/citations?user=REPLACE_KANG_ZHOU",
   },
   {
     name: "Dong Yi",
     title: "General Chair · Senior Scientist",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/dong-yi.jpg",
+    href: "https://scholar.google.com/citations?user=REPLACE_DONG_YI",
   },
   {
     name: "Zhen Lei",
     title: "General Chair · Professor, IEEE/IAPR Fellow",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/zhen-lei.jpg",
+    href: "https://scholar.google.com/citations?user=REPLACE_ZHEN_LEI",
   },
   {
     name: "Hongbin Liu",
     title: "General Chair · Director",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/hongbin-liu.jpg",
+    href: "https://scholar.google.com/citations?user=REPLACE_HONGBIN_LIU",
   },
   {
     name: "Gaofeng Meng",
     title: "General Chair · Professor",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/gaofeng-meng.jpg",
+    href: "https://scholar.google.com/citations?user=REPLACE_GAOFENG_MENG",
   },
 ]
 
@@ -76,6 +84,17 @@ export function Organizers() {
               </p>
               {p.affiliation && (
                 <p className="mt-2 text-[13px] leading-snug text-muted-foreground">{p.affiliation}</p>
+              )}
+              {p.href && (
+                <a
+                  href={p.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex h-9 items-center gap-2 rounded-sm border border-border px-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-foreground transition-colors hover:bg-secondary"
+                >
+                  <ExternalLink className="h-3.5 w-3.5" />
+                  <span>Homepage</span>
+                </a>
               )}
             </li>
           ))}
