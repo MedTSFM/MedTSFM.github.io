@@ -21,8 +21,8 @@ const organizers: Person[] = [
     name: "Jinlin Wu",
     title: "General Chair · Assistant Professor",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
-    photo: "/organizers/jinlin-wu.jpg",
-    href: "https://scholar.google.com/citations?user=REPLACE_JINLIN_WU",
+    photo: "/organizers/jinlin-wu.png",
+    href: "https://kimwu1994.github.io/jinlin.github.io/",
   },
   {
     name: "Kang Zhou",
