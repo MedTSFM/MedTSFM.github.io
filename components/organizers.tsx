@@ -14,8 +14,8 @@ const organizers: Person[] = [
     name: "Chenxi Liu",
     title: "General Chair · Assistant Professor",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
-    photo: "/organizers/chenxi-liu.jpg",
-    href: "https://scholar.google.com/citations?user=REPLACE_CHENXI_LIU",
+    photo: "/organizers/chenxi-liu.png",
+    href: "https://chenxiliu-hnu.github.io/homepage/",
   },
   {
     name: "Jinlin Wu",
