@@ -65,7 +65,7 @@ export function Committee() {
                 <img
                   src="/organizers/junyu-chen.jpg"
                   alt="Junyu Chen"
-                  className="h-20 w-20 flex-shrink-0 rounded-full object-cover border border-border"
+                  className="h-20 w-20 flex-shrink-0 rounded-full object-cover object-[50%_40%] border border-border"
                 />
                 <div>
                   <h3 className="font-serif text-xl text-foreground">Junyu Chen</h3>
