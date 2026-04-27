@@ -51,7 +51,7 @@ export function CallForPapers() {
           {/* Theme & Topics */}
           <div>
             <h3 className="font-serif text-xl text-foreground md:text-2xl">Theme and topics</h3>
-            <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-3 max-w-none text-[15px] leading-relaxed text-muted-foreground">
               The workshop encourages submissions of innovative solutions for a broad range of medical time series
               intelligence and healthcare foundation models. Topics of interest include, but are not limited to:
             </p>
@@ -70,7 +70,7 @@ export function CallForPapers() {
           {/* Objectives */}
           <div>
             <h3 className="font-serif text-xl text-foreground md:text-2xl">Objectives and goals</h3>
-            <div className="mt-3 max-w-3xl space-y-3 text-[15px] leading-relaxed text-muted-foreground">
+            <div className="mt-3 max-w-none space-y-3 text-[15px] leading-relaxed text-muted-foreground">
               <p>
                 The continued digitization of healthcare and the accompanying deployment of biomedical sensing
                 technologies generate increasingly massive amounts of medical time series data, fueling applications
@@ -91,7 +91,7 @@ export function CallForPapers() {
           {/* Submission guidelines */}
           <div>
             <h3 className="font-serif text-xl text-foreground md:text-2xl">Submission guidelines</h3>
-            <div className="mt-3 max-w-3xl space-y-3 text-[15px] leading-relaxed text-muted-foreground">
+            <div className="mt-3 max-w-none space-y-3 text-[15px] leading-relaxed text-muted-foreground">
               <p>
                 Manuscripts should be submitted in PDF format following the standard IEEE ICDM template. Full papers
                 cannot exceed 9 pages; short papers cannot exceed 4 pages, including references and appendices.
@@ -108,7 +108,7 @@ export function CallForPapers() {
           {/* Participation */}
           <div>
             <h3 className="font-serif text-xl text-foreground md:text-2xl">Participation and selection</h3>
-            <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-3 max-w-none text-[15px] leading-relaxed text-muted-foreground">
               The workshop welcomes researchers and practitioners from academia, industry, and hospitals interested in
               health analytics and foundation models. Submissions will be peer-reviewed based on relevance and quality.
               A <span className="text-foreground">Best Paper Award</span> will be determined
