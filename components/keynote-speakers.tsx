@@ -7,6 +7,8 @@ export function KeynoteSpeakers() {
         <SectionHeading
           eyebrow="Keynotes"
           title="Keynote speakers"
+          className="max-w-none"
+          descriptionClassName="max-w-none"
           description="We are committed to inviting distinguished experts from around the globe with prestigious experience in time series analytics and AI for health."
         />
 
