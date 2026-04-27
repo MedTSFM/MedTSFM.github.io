@@ -18,7 +18,9 @@ export function Schedule() {
         <SectionHeading
           eyebrow="Schedule"
           title="Tentative program"
-          description="The workshop is an in-person half-day event, featuring invited talks, paper presentations, and discussions."
+          descriptionClassName="max-w-none text-[13px] lg:whitespace-nowrap xl:text-sm"
+          className="max-w-none"
+          description="The workshop is an in-person half-day event, featuring invited talks, paper presentations, and discussions. We are committed to inviting distinguished experts from around the globe with prestigious experience in time series analytics and AI for health."
         />
 
         <div className="mt-12 overflow-hidden rounded-md border border-border bg-card">
