@@ -3,17 +3,21 @@ export function SectionHeading({
   title,
   description,
   titleClassName,
+  descriptionClassName,
+  className,
   align = "left",
 }: {
   eyebrow?: string
   title: string
   description?: string
   titleClassName?: string
+  descriptionClassName?: string
+  className?: string
   align?: "left" | "center"
 }) {
   const isCenter = align === "center"
   return (
-    <div className={isCenter ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
+    <div className={[isCenter ? "mx-auto max-w-3xl text-center" : "max-w-3xl", className].filter(Boolean).join(" ")}>
       {eyebrow && (
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
           {eyebrow}
@@ -38,7 +42,14 @@ export function SectionHeading({
         aria-hidden
       />
       {description && (
-        <p className="mt-6 text-pretty text-base leading-relaxed text-muted-foreground md:text-[17px]">
+        <p
+          className={[
+            "mt-6 text-pretty text-base leading-relaxed text-muted-foreground md:text-[17px]",
+            descriptionClassName,
+          ]
+            .filter(Boolean)
+            .join(" ")}
+        >
           {description}
         </p>
       )}
