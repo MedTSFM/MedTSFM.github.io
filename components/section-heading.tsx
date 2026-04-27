@@ -44,7 +44,7 @@ export function SectionHeading({
       {description && (
         <p
           className={[
-            "mt-6 text-pretty text-base leading-relaxed text-muted-foreground md:text-[17px]",
+            "mt-6 text-base leading-relaxed text-muted-foreground md:text-[17px]",
             descriptionClassName,
           ]
             .filter(Boolean)

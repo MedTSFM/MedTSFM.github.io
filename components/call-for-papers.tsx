@@ -25,7 +25,7 @@ export function CallForPapers() {
           eyebrow="Call for Papers"
           title="Submit your research"
           titleClassName="whitespace-nowrap text-2xl sm:text-3xl md:text-[2.6rem]"
-          descriptionClassName="max-w-none text-sm lg:whitespace-nowrap xl:text-[15px]"
+          descriptionClassName="max-w-none text-[13px] lg:whitespace-nowrap xl:text-sm"
           className="max-w-none"
           description="We invite original research contributions on all aspects of medical time series analytics and foundation models. Selected papers will be invited for extended submission to a special journal issue."
         />
