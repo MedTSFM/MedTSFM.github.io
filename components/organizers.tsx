@@ -57,7 +57,7 @@ const organizers: Person[] = [
   },
   {
     name: "Hongbin Liu",
-    title: "General Chair · Director",
+    title: "General Chair · Professor",
     affiliation: "CAIR, HKISI-CAS, Hong Kong",
     photo: "/organizers/hongbin-liu.png",
     href: "https://scholar.google.com/citations?user=ybmGRfIAAAAJ&hl=en",

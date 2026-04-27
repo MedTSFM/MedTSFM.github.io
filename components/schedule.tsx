@@ -1,14 +1,14 @@
 import { SectionHeading } from "./section-heading"
 
 const program = [
-  { time: "9:00 – 9:10", event: "Opening and welcome" },
-  { time: "9:10 – 9:30", event: "Keynote #1" },
-  { time: "9:30 – 10:10", event: "Session 1: Four paper presentations" },
-  { time: "10:10 – 10:30", event: "Coffee break" },
-  { time: "10:30 – 10:50", event: "Keynote #2" },
-  { time: "10:50 – 11:30", event: "Session 2: Four paper presentations" },
-  { time: "11:30 – 11:45", event: "Panel discussion" },
-  { time: "11:45 – 12:00", event: "Award ceremony & closing remark" },
+  { time: "9:00 - 9:10", event: "Opening and welcome" },
+  { time: "9:10 - 9:30", event: "Keynote #1" },
+  { time: "9:30 - 10:10", event: "Session 1: Paper presentations" },
+  { time: "10:10 - 10:30", event: "Coffee break" },
+  { time: "10:30 - 10:50", event: "Keynote #2" },
+  { time: "10:50 - 11:30", event: "Session 2: Paper presentations" },
+  { time: "11:30 - 11:45", event: "Panel discussion" },
+  { time: "11:45 - 12:00", event: "Award ceremony & closing remark" },
 ]
 
 export function Schedule() {
@@ -25,8 +25,12 @@ export function Schedule() {
           <table className="w-full border-collapse text-left">
             <thead>
               <tr className="border-b border-border bg-secondary/60 text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">
-                <th scope="col" className="w-[220px] px-6 py-4">Time</th>
-                <th scope="col" className="px-6 py-4">Event</th>
+                <th scope="col" className="w-[220px] px-6 py-4">
+                  Time
+                </th>
+                <th scope="col" className="px-6 py-4">
+                  Event
+                </th>
               </tr>
             </thead>
             <tbody>

@@ -14,7 +14,7 @@ const dates = [
   { label: "Paper submission deadline", value: "TBA" },
   { label: "Paper acceptance notification", value: "TBA" },
   { label: "Camera-ready submission deadline", value: "TBA" },
-  { label: "Workshop date", value: "December 2026" },
+  { label: "Workshop date", value: "TBA" },
 ]
 
 export function CallForPapers() {
@@ -24,6 +24,7 @@ export function CallForPapers() {
         <SectionHeading
           eyebrow="Call for Papers"
           title="Submit your research"
+          titleClassName="whitespace-nowrap text-2xl sm:text-3xl md:text-[2.6rem]"
           description="We invite original research contributions on all aspects of medical time series analytics and foundation models. Selected papers will be invited for extended submission to a special journal issue."
         />
 
@@ -107,8 +108,8 @@ export function CallForPapers() {
             <h3 className="font-serif text-xl text-foreground md:text-2xl">Participation and selection</h3>
             <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-muted-foreground">
               The workshop welcomes researchers and practitioners from academia, industry, and hospitals interested in
-              health analytics and foundation models. Submissions will be peer-reviewed by the Program Committee based
-              on relevance and quality. A <span className="text-foreground">Best Paper Award</span> will be determined
+              health analytics and foundation models. Submissions will be peer-reviewed based on relevance and quality.
+              A <span className="text-foreground">Best Paper Award</span> will be determined
               through peer review and presentation evaluation.
             </p>
           </div>

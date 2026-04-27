@@ -2,11 +2,13 @@ export function SectionHeading({
   eyebrow,
   title,
   description,
+  titleClassName,
   align = "left",
 }: {
   eyebrow?: string
   title: string
   description?: string
+  titleClassName?: string
   align?: "left" | "center"
 }) {
   const isCenter = align === "center"
@@ -17,7 +19,14 @@ export function SectionHeading({
           {eyebrow}
         </p>
       )}
-      <h2 className="font-serif text-balance text-3xl font-normal leading-tight tracking-tight text-foreground md:text-[2.6rem]">
+      <h2
+        className={[
+          "font-serif text-balance text-3xl font-normal leading-tight tracking-tight text-foreground md:text-[2.6rem]",
+          titleClassName,
+        ]
+          .filter(Boolean)
+          .join(" ")}
+      >
         {title}
       </h2>
       <div
