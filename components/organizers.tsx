@@ -86,7 +86,7 @@ export function Organizers() {
             <li key={p.name} className="flex flex-col items-center text-center">
               <div
                 className={[
-                  "relative aspect-[4/5] w-36 overflow-hidden rounded-md border border-border bg-white",
+                  "relative aspect-[4/5] w-40 overflow-hidden rounded-md border border-border bg-white",
                   p.photoFrameClass,
                 ]
                   .filter(Boolean)
