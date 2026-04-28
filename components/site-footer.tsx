@@ -25,7 +25,7 @@ export function SiteFooter() {
 
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <MapPin className="h-4 w-4 text-primary" aria-hidden />
-            <span>Hosted in Shenyang, China · December 2026</span>
+            <span>Hosted in Shenyang, China · November 2026</span>
           </div>
         </div>
 

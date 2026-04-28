@@ -15,7 +15,7 @@ export function Hero() {
       />
 
       <div className="mx-auto flex min-h-[560px] max-w-6xl flex-col items-center justify-center px-4 py-24 text-center md:min-h-[640px] md:px-6 lg:min-h-[680px]">
-        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/90">
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/90 md:text-base">
           MedTSFM · IEEE ICDM 2026
         </p>
 
@@ -29,7 +29,7 @@ export function Hero() {
           <div className="flex items-center gap-2">
             <Calendar className="h-4 w-4 text-white" aria-hidden />
             <dt className="sr-only">Date</dt>
-            <dd>December 2026</dd>
+            <dd>November 2026</dd>
           </div>
           <div className="flex items-center gap-2">
             <Clock className="h-4 w-4 text-white" aria-hidden />

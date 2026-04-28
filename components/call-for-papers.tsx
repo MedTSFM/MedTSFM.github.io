@@ -11,10 +11,10 @@ const topics = [
 ]
 
 const dates = [
-  { label: "Paper submission deadline", value: "TBA" },
-  { label: "Paper acceptance notification", value: "TBA" },
-  { label: "Camera-ready submission deadline", value: "TBA" },
-  { label: "Workshop date", value: "TBA" },
+  { label: "Paper submission deadline", value: "September 5, 2026" },
+  { label: "Paper acceptance notification", value: "September 30, 2026" },
+  { label: "Camera-ready submission deadline", value: "October 15, 2026" },
+  { label: "Workshop date", value: "November 14, 2026" },
 ]
 
 export function CallForPapers() {
@@ -25,7 +25,7 @@ export function CallForPapers() {
           eyebrow="Call for Papers"
           title="Submit your research"
           titleClassName="whitespace-nowrap text-2xl sm:text-3xl md:text-[2.6rem]"
-          descriptionClassName="max-w-none text-[13px] lg:whitespace-nowrap xl:text-sm"
+          descriptionClassName="w-full max-w-none text-[15px] leading-relaxed md:text-base"
           className="max-w-none"
           description="We invite original research contributions on all aspects of medical time series analytics and foundation models. Selected papers will be invited for extended submission to a special journal issue."
         />
@@ -34,7 +34,7 @@ export function CallForPapers() {
         <figure className="mt-12 overflow-hidden rounded-md border border-border">
           <div className="relative aspect-[24/5]">
             <img
-              src="/shenyang/skyline.jpg"
+              src="/shenyang/zhongshan-square.jpg"
               alt=""
               aria-hidden
               className="absolute inset-0 h-full w-full object-cover"

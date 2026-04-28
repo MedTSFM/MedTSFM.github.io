@@ -81,7 +81,7 @@ export default function PosterPage() {
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" aria-hidden />
                   <dt className="sr-only">Date</dt>
-                  <dd>Date: December 2026</dd>
+                  <dd>Date: November 2026</dd>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4" aria-hidden />
@@ -154,7 +154,7 @@ export default function PosterPage() {
         {/* Footer stripe */}
         <footer className="mt-10 flex flex-col items-start justify-between gap-2 border-t border-border pt-5 text-[11px] uppercase tracking-[0.2em] text-muted-foreground md:flex-row md:items-center">
           <span>MedTSFM · IEEE ICDM 2026 Workshop</span>
-          <span>Shenyang · China · December 2026</span>
+          <span>Shenyang · China · November 2026</span>
         </footer>
       </article>
     </main>
