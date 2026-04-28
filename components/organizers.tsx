@@ -9,6 +9,7 @@ type Person = {
   href?: string
   photoClass?: string
   photoFrameClass?: string
+  gridClass?: string
 }
 
 const organizers: Person[] = [
@@ -54,6 +55,7 @@ const organizers: Person[] = [
     href: "https://scholar.google.com/citations?user=cuJ3QG8AAAAJ&hl=en",
     photoClass: "object-contain",
     photoFrameClass: "bg-white",
+    gridClass: "lg:col-start-2",
   },
   {
     name: "Hongbin Liu",
@@ -63,6 +65,7 @@ const organizers: Person[] = [
     href: "https://scholar.google.com/citations?user=ybmGRfIAAAAJ&hl=en",
     photoClass: "object-contain",
     photoFrameClass: "bg-white",
+    gridClass: "lg:col-start-4",
   },
   {
     name: "Gaofeng Meng",
@@ -72,6 +75,7 @@ const organizers: Person[] = [
     href: "https://people.ucas.edu.cn/~gfmeng",
     photoClass: "object-contain",
     photoFrameClass: "bg-white",
+    gridClass: "lg:col-start-6",
   },
 ]
 
@@ -81,9 +85,14 @@ export function Organizers() {
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading eyebrow="Organizers" title="Workshop organizers" />
 
-        <ul className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <ul className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-8">
           {organizers.map((p) => (
-            <li key={p.name} className="flex flex-col items-center text-center">
+            <li
+              key={p.name}
+              className={["flex flex-col items-center text-center lg:col-span-2", p.gridClass]
+                .filter(Boolean)
+                .join(" ")}
+            >
               <div
                 className={[
                   "relative aspect-[2/3] w-[12.5rem] overflow-hidden rounded-md border border-border bg-white",
