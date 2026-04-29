@@ -14,12 +14,12 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="mx-auto flex min-h-[560px] max-w-6xl flex-col items-center justify-center px-4 py-24 text-center md:min-h-[640px] md:px-6 lg:min-h-[680px]">
+      <div className="mx-auto flex min-h-[500px] max-w-6xl flex-col items-center justify-center px-4 py-16 text-center md:px-6">
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/90 md:text-base">
           MedTSFM · IEEE ICDM 2026
         </p>
 
-        <h1 className="mt-6 max-w-5xl font-sans text-4xl font-bold leading-[1.08] tracking-tight text-white drop-shadow-[0_2px_18px_rgba(0,0,0,0.45)] md:text-6xl lg:text-[4.25rem]">
+        <h1 className="mt-6 max-w-5xl font-sans text-4xl font-semibold leading-[1.08] tracking-tight text-white drop-shadow-[0_2px_18px_rgba(0,0,0,0.45)] md:text-5xl lg:text-[2.75rem]">
           The International Workshop on Medical Time Series Analytics and Foundation Models
         </h1>
 
@@ -42,12 +42,6 @@ export function Hero() {
             <dd>Shenyang, China</dd>
           </div>
         </dl>
-
-        <p className="mt-8 max-w-3xl text-pretty text-base leading-relaxed text-white/88 md:text-[18px]">
-          A half-day workshop at IEEE ICDM 2026 bringing together researchers, practitioners, and clinicians to discuss
-          recent advances, open challenges, and practical opportunities in medical time series modeling and healthcare
-          foundation models.
-        </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <a

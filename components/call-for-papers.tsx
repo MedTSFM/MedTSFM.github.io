@@ -14,7 +14,7 @@ const dates = [
   { label: "Paper submission deadline", value: "September 5, 2026" },
   { label: "Paper acceptance notification", value: "September 30, 2026" },
   { label: "Camera-ready submission deadline", value: "October 15, 2026" },
-  { label: "Workshop date", value: "November 14, 2026" },
+  { label: "Workshop date", value: "TBA" },
 ]
 
 export function CallForPapers() {

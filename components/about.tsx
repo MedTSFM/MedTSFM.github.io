@@ -6,7 +6,7 @@ export function About() {
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading eyebrow="About" title="About the workshop" />
 
-        <div className="mt-14 grid gap-12 md:grid-cols-5">
+        <div className="mt-14 grid gap-12 md:grid-cols-5 md:items-stretch">
           <div className="space-y-5 text-pretty text-[15.5px] leading-[1.75] text-muted-foreground md:col-span-3 md:text-[17px]">
             <p>
               Medical time series analytics, including modeling, mining, and interpreting longitudinal physiological
@@ -27,13 +27,15 @@ export function About() {
             </p>
           </div>
 
-          <aside className="space-y-5 md:col-span-2">
-            <figure className="overflow-hidden rounded-md border border-border bg-card">
-              <img
-                src="/shenyang/mukden-palace.jpg"
-                alt="Mukden Palace in Shenyang, the host city of ICDM 2026"
-                className="aspect-[4/3] w-full object-cover"
-              />
+          <aside className="md:col-span-2 md:h-full">
+            <figure className="overflow-hidden rounded-md border border-border bg-card md:flex md:h-full md:flex-col">
+              <div className="relative aspect-[4/3] md:aspect-auto md:flex-1">
+                <img
+                  src="/shenyang/mukden-palace.jpg"
+                  alt="Mukden Palace in Shenyang, the host city of ICDM 2026"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
               <figcaption className="flex items-center justify-between border-t border-border px-4 py-2.5 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
                 <span>Host city</span>
                 <span className="text-foreground/80">Shenyang</span>
