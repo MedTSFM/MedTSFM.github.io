@@ -24,7 +24,7 @@ export function CallForPapers() {
         <SectionHeading
           eyebrow="Call for Papers"
           title="Submit your research"
-          titleClassName="whitespace-nowrap text-2xl sm:text-3xl md:text-[2.6rem]"
+          titleClassName="whitespace-nowrap text-[15px] sm:text-xl md:text-[2rem]"
           descriptionClassName="w-full max-w-none text-[15px] leading-relaxed md:text-base"
           className="max-w-none"
           description="We invite original research contributions on all aspects of medical time series analytics and foundation models. Selected papers will be invited for extended submission to a special journal issue."
