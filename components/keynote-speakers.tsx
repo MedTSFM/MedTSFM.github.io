@@ -16,11 +16,11 @@ export function KeynoteSpeakers() {
           {[1, 2].map((i) => (
             <div key={i} className="flex items-start gap-6">
               <div className="flex h-24 w-24 flex-none items-center justify-center rounded-full border border-dashed border-border bg-secondary text-muted-foreground">
-                <span className="font-serif text-xl">{i}</span>
+                <span className="font-sans text-xl font-semibold">{i}</span>
               </div>
               <div className="min-w-0 pt-1">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Keynote #{i}</p>
-                <h3 className="mt-2 font-serif text-2xl text-foreground">To be announced</h3>
+                <h3 className="mt-2 font-sans text-2xl font-semibold tracking-tight text-foreground">To be announced</h3>
                 <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
                   Speaker and talk title will be released shortly. More invited speakers are coming soon.
                 </p>

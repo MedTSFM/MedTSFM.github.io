@@ -40,7 +40,7 @@ export default function PosterPage() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-muted-foreground">
             IEEE ICDM 2026 · Workshop
           </p>
-          <h1 className="mt-3 font-serif text-4xl leading-[1.05] tracking-tight text-primary md:text-[54px] lg:text-[62px]">
+          <h1 className="mt-3 font-sans text-4xl font-semibold leading-[1.05] tracking-tight text-primary md:text-[54px] lg:text-[62px]">
             Call for Papers at MedTSFM{" "}
             <span className="text-foreground">(ICDM&rsquo;26 Workshop)</span>
           </h1>
@@ -73,7 +73,7 @@ export default function PosterPage() {
             />
             {/* Overlay content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center text-white">
-              <h2 className="max-w-3xl font-serif text-2xl leading-snug tracking-tight md:text-[32px] lg:text-[38px]">
+              <h2 className="max-w-3xl font-sans text-2xl font-semibold leading-snug tracking-tight md:text-[32px] lg:text-[38px]">
                 The International Workshop on Medical Time Series Analytics and Foundation Models
               </h2>
 

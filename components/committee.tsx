@@ -23,7 +23,7 @@ export function Committee() {
                   className="h-20 w-20 flex-shrink-0 rounded-full border border-border object-cover object-[90%_60%]"
                 />
                 <div>
-                  <h3 className="font-serif text-xl text-foreground">Bochuang Yang</h3>
+                  <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground">Bochuang Yang</h3>
                   <p className="mt-1 text-[14px] text-muted-foreground">CAIR, HKISI-CAS, Hong Kong</p>
                   <p className="mt-1 text-[14px] text-muted-foreground">
                     Maintaining the workshop website and communications.
@@ -41,7 +41,7 @@ export function Committee() {
                   className="h-20 w-20 flex-shrink-0 rounded-full border border-border object-cover object-[50%_35%]"
                 />
                 <div>
-                  <h3 className="font-serif text-xl text-foreground">Junyu Chen</h3>
+                  <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground">Junyu Chen</h3>
                   <p className="mt-1 text-[14px] text-muted-foreground">CAIR, HKISI-CAS, Hong Kong</p>
                   <p className="mt-1 text-[14px] text-muted-foreground">
                     Leading workshop publicity and outreach across the community.

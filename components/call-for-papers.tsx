@@ -50,7 +50,7 @@ export function CallForPapers() {
         <div className="mt-12 space-y-12">
           {/* Theme & Topics */}
           <div>
-            <h3 className="font-serif text-xl text-foreground md:text-2xl">Theme and topics</h3>
+            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Theme and topics</h3>
             <p className="mt-3 max-w-none text-[15px] leading-relaxed text-muted-foreground">
               The workshop encourages submissions of innovative solutions for a broad range of medical time series
               intelligence and healthcare foundation models. Topics of interest include, but are not limited to:
@@ -69,7 +69,7 @@ export function CallForPapers() {
 
           {/* Objectives */}
           <div>
-            <h3 className="font-serif text-xl text-foreground md:text-2xl">Objectives and goals</h3>
+            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Objectives and goals</h3>
             <div className="mt-3 max-w-none space-y-3 text-[15px] leading-relaxed text-muted-foreground">
               <p>
                 The continued digitization of healthcare and the accompanying deployment of biomedical sensing
@@ -90,7 +90,7 @@ export function CallForPapers() {
 
           {/* Submission guidelines */}
           <div>
-            <h3 className="font-serif text-xl text-foreground md:text-2xl">Submission guidelines</h3>
+            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Submission guidelines</h3>
             <div className="mt-3 max-w-none space-y-3 text-[15px] leading-relaxed text-muted-foreground">
               <p>
                 Manuscripts should be submitted in PDF format following the standard IEEE ICDM template. Full papers
@@ -107,7 +107,7 @@ export function CallForPapers() {
 
           {/* Participation */}
           <div>
-            <h3 className="font-serif text-xl text-foreground md:text-2xl">Participation and selection</h3>
+            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Participation and selection</h3>
             <p className="mt-3 max-w-none text-[15px] leading-relaxed text-muted-foreground">
               The workshop welcomes researchers and practitioners from academia, industry, and hospitals interested in
               health analytics and foundation models. Submissions will be peer-reviewed based on relevance and quality.
@@ -120,7 +120,7 @@ export function CallForPapers() {
 
           {/* Important dates */}
           <div>
-            <h3 className="font-serif text-xl text-foreground md:text-2xl">Important dates</h3>
+            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Important dates</h3>
             <ul className="mt-5 max-w-2xl divide-y divide-border rounded-md border border-border bg-card">
               {dates.map((d) => (
                 <li key={d.label} className="flex items-center justify-between gap-4 px-5 py-4 text-[15px]">
