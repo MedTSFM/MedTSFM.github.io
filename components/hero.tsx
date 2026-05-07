@@ -54,7 +54,7 @@ export function Hero() {
             href="#about"
             className="inline-flex items-center justify-center rounded-md border border-white/70 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/15"
           >
-            Read more
+            Read More
           </a>
         </div>
       </div>

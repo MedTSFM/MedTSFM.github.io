@@ -6,7 +6,7 @@ export function KeynoteSpeakers() {
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading
           eyebrow="Keynotes"
-          title="Keynote speakers"
+          title="Keynote Speakers"
           className="max-w-none"
           descriptionClassName="max-w-none"
           description="We are committed to inviting distinguished experts from around the globe with prestigious experience in time series analytics and AI for health."
@@ -20,7 +20,7 @@ export function KeynoteSpeakers() {
               </div>
               <div className="min-w-0 pt-1">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Keynote #{i}</p>
-                <h3 className="mt-2 font-sans text-2xl font-semibold tracking-tight text-foreground">To be announced</h3>
+                <h3 className="mt-2 font-sans text-2xl font-semibold tracking-tight text-foreground">To Be Announced</h3>
                 <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
                   Speaker and talk title will be released shortly. More invited speakers are coming soon.
                 </p>

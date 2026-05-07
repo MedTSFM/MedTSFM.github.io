@@ -1,20 +1,20 @@
 import { SectionHeading } from "./section-heading"
 
 const topics = [
-  "Modeling of medical time-series data (EEG, EOG, EMG, ECG)",
-  "Foundation models and LLMs for healthcare analytics",
-  "Spatial time series (ultrasound image and medical video) analytics",
-  "Multimodal healthcare data mining, cross-modal representation learning, and alignment",
-  "Trustworthy, interpretable, and privacy-preserving healthcare data intelligence",
-  "Real-world healthcare applications, clinical decision support, and digital health systems",
-  "Benchmark datasets, surveys, tutorials, and open-source resources for medical time series",
+  "Modeling of Medical Time-Series Data (EEG, EOG, EMG, ECG)",
+  "Foundation Models and LLMs for Healthcare Analytics",
+  "Spatial Time Series (Ultrasound Image and Medical Video) Analytics",
+  "Multimodal Healthcare Data Mining, Cross-Modal Representation Learning, and Alignment",
+  "Trustworthy, Interpretable, and Privacy-Preserving Healthcare Data Intelligence",
+  "Real-World Healthcare Applications, Clinical Decision Support, and Digital Health Systems",
+  "Benchmark Datasets, Surveys, Tutorials, and Open-Source Resources for Medical Time Series",
 ]
 
 const dates = [
-  { label: "Paper submission deadline", value: "September 5, 2026" },
-  { label: "Paper acceptance notification", value: "September 30, 2026" },
-  { label: "Camera-ready submission deadline", value: "October 15, 2026" },
-  { label: "Workshop date", value: "TBA" },
+  { label: "Paper Submission Deadline", value: "September 5, 2026" },
+  { label: "Paper Acceptance Notification", value: "September 30, 2026" },
+  { label: "Camera-Ready Submission Deadline", value: "October 15, 2026" },
+  { label: "Workshop Date", value: "TBA" },
 ]
 
 export function CallForPapers() {
@@ -23,7 +23,7 @@ export function CallForPapers() {
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading
           eyebrow="Call for Papers"
-          title="Submit your research"
+          title="Submit Your Research"
           titleClassName="whitespace-nowrap text-[15px] sm:text-xl md:text-[2rem]"
           descriptionClassName="w-full max-w-none text-[15px] leading-relaxed md:text-base"
           className="max-w-none"
@@ -50,7 +50,7 @@ export function CallForPapers() {
         <div className="mt-12 space-y-12">
           {/* Theme & Topics */}
           <div>
-            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Theme and topics</h3>
+            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Theme and Topics</h3>
             <p className="mt-3 max-w-none text-[15px] leading-relaxed text-muted-foreground">
               The workshop encourages submissions of innovative solutions for a broad range of medical time series
               intelligence and healthcare foundation models. Topics of interest include, but are not limited to:
@@ -69,7 +69,7 @@ export function CallForPapers() {
 
           {/* Objectives */}
           <div>
-            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Objectives and goals</h3>
+            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Objectives and Goals</h3>
             <div className="mt-3 max-w-none space-y-3 text-[15px] leading-relaxed text-muted-foreground">
               <p>
                 The continued digitization of healthcare and the accompanying deployment of biomedical sensing
@@ -90,7 +90,7 @@ export function CallForPapers() {
 
           {/* Submission guidelines */}
           <div>
-            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Submission guidelines</h3>
+            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Submission Guidelines</h3>
             <div className="mt-3 max-w-none space-y-3 text-[15px] leading-relaxed text-muted-foreground">
               <p>
                 Manuscripts should be submitted in PDF format following the standard IEEE ICDM template. Full papers
@@ -107,7 +107,7 @@ export function CallForPapers() {
 
           {/* Participation */}
           <div>
-            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Participation and selection</h3>
+            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Participation and Selection</h3>
             <p className="mt-3 max-w-none text-[15px] leading-relaxed text-muted-foreground">
               The workshop welcomes researchers and practitioners from academia, industry, and hospitals interested in
               health analytics and foundation models. Submissions will be peer-reviewed based on relevance and quality.
@@ -120,7 +120,7 @@ export function CallForPapers() {
 
           {/* Important dates */}
           <div>
-            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Important dates</h3>
+            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Important Dates</h3>
             <ul className="mt-5 max-w-2xl divide-y divide-border rounded-md border border-border bg-card">
               {dates.map((d) => (
                 <li key={d.label} className="flex items-center justify-between gap-4 px-5 py-4 text-[15px]">

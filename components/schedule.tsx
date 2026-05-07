@@ -1,14 +1,14 @@
 import { SectionHeading } from "./section-heading"
 
 const program = [
-  { time: "9:00 - 9:10", event: "Opening and welcome" },
+  { time: "9:00 - 9:10", event: "Opening and Welcome" },
   { time: "9:10 - 9:30", event: "Keynote #1" },
-  { time: "9:30 - 10:10", event: "Session 1: Paper presentations" },
-  { time: "10:10 - 10:30", event: "Coffee break" },
+  { time: "9:30 - 10:10", event: "Session 1: Paper Presentations" },
+  { time: "10:10 - 10:30", event: "Coffee Break" },
   { time: "10:30 - 10:50", event: "Keynote #2" },
-  { time: "10:50 - 11:30", event: "Session 2: Paper presentations" },
-  { time: "11:30 - 11:45", event: "Panel discussion" },
-  { time: "11:45 - 12:00", event: "Award ceremony & closing remark" },
+  { time: "10:50 - 11:30", event: "Session 2: Paper Presentations" },
+  { time: "11:30 - 11:45", event: "Panel Discussion" },
+  { time: "11:45 - 12:00", event: "Award Ceremony & Closing Remark" },
 ]
 
 export function Schedule() {
@@ -17,7 +17,7 @@ export function Schedule() {
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading
           eyebrow="Schedule"
-          title="Tentative program"
+          title="Tentative Program"
           descriptionClassName="max-w-none"
           className="max-w-none"
           description="The workshop is an in-person half-day event, featuring invited talks, paper presentations, and discussions. We are committed to inviting distinguished experts from around the globe with prestigious experience in time series analytics and AI for health."

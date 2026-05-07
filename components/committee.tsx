@@ -10,7 +10,7 @@ export function Committee() {
   return (
     <section id="committee" className="border-b border-border/60 bg-background">
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
-        <SectionHeading eyebrow="Committee" title="Workshop chairs and related workshops" />
+        <SectionHeading eyebrow="Committee" title="Workshop Chairs and Related Workshops" />
 
         <div className="mt-12 grid gap-10 md:grid-cols-2">
           <div className="space-y-8">
@@ -52,7 +52,7 @@ export function Committee() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Related workshops</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Related Workshops</p>
             <ul className="mt-5 space-y-3">
               {relatedWorkshops.map((w) => (
                 <li key={w.name} className="text-[14px] leading-relaxed">

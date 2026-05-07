@@ -4,7 +4,7 @@ export function About() {
   return (
     <section id="about" className="border-b border-border/60 bg-background">
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
-        <SectionHeading eyebrow="About" title="About the workshop" />
+        <SectionHeading eyebrow="About" title="About the Workshop" />
 
         <div className="mt-14 grid gap-12 md:grid-cols-5 md:items-stretch">
           <div className="space-y-5 text-pretty text-[15.5px] leading-[1.75] text-muted-foreground md:col-span-3 md:text-[17px]">
@@ -37,7 +37,7 @@ export function About() {
                 />
               </div>
               <figcaption className="flex items-center justify-between border-t border-border px-4 py-2.5 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-                <span>Host city</span>
+                <span>Host City</span>
                 <span className="text-foreground/80">Shenyang</span>
               </figcaption>
             </figure>

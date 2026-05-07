@@ -36,7 +36,7 @@ export function SiteFooter() {
               href="/poster/"
               className="text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-primary"
             >
-              Call for papers poster
+              Call for Papers Poster
             </a>
             <span>
               Website maintained by <span className="text-foreground">Bochuang Yang</span> (Web Chair).

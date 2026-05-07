@@ -83,7 +83,7 @@ export function Organizers() {
   return (
     <section id="organizers" className="border-b border-border/60 bg-background">
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
-        <SectionHeading eyebrow="Organizers" title="Workshop organizers" />
+        <SectionHeading eyebrow="Organizers" title="Workshop Organizers" />
 
         <ul className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-8">
           {organizers.map((p) => (
