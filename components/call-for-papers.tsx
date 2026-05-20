@@ -139,7 +139,7 @@ export function CallForPapers() {
           <div className="h-px w-full bg-border" aria-hidden />
 
           {/* Important dates */}
-          <div>
+          <div id="important-dates" className="scroll-mt-24">
             <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Important Dates</h3>
             <ul className="mt-5 max-w-2xl divide-y divide-border rounded-md border border-border bg-card">
               {dates.map((d) => (
