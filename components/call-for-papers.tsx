@@ -93,12 +93,32 @@ export function CallForPapers() {
             <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Submission Guidelines</h3>
             <div className="mt-3 max-w-none space-y-3 text-[15px] leading-relaxed text-muted-foreground">
               <p>
-                Manuscripts should be submitted in PDF format following the standard IEEE ICDM template. Full papers
-                cannot exceed 9 pages; short papers cannot exceed 4 pages, including references and appendices.
+                Please submit the papers in EasyChair at{" "}
+                <a
+                  href="https://easychair.org/conferences/?conf=medtsfmicdm2026"
+                  className="text-primary"
+                >
+                  https://easychair.org/conferences/?conf=medtsfmicdm2026
+                </a>
+                .
               </p>
               <p>
-                This workshop follows a <span className="text-foreground">single-blind</span> review process. The
-                submission link will be announced shortly. For any questions, please contact the organizers.
+                Manuscripts should be submitted in PDF format following the standard IEEE ICDM template, see{" "}
+                <a
+                  href="https://www.ieee.org/conferences/publishing/templates"
+                  className="text-primary"
+                >
+                  https://www.ieee.org/conferences/publishing/templates
+                </a>
+                . Full papers cannot exceed 9 pages; short papers cannot exceed 4 pages, including references and appendices.
+              </p>
+              <p>
+                This workshop follows a <span className="text-foreground">single-blind</span> review process. For any
+                questions, please feel free to contact{" "}
+                <a href="mailto:chenxi.liu@cair-cas.org.hk" className="text-primary">
+                  Dr. Chenxi Liu
+                </a>
+                .
               </p>
             </div>
           </div>
