@@ -31,7 +31,7 @@ export function CallForPapers() {
         />
 
         {/* Subtle Shenyang accent band */}
-        <figure className="mt-12 overflow-hidden rounded-md border border-border">
+        {/* <figure className="mt-12 overflow-hidden rounded-md border border-border">
           <div className="relative aspect-[24/5]">
             <img
               src="/shenyang/zhongshan-square.jpg"
@@ -45,7 +45,7 @@ export function CallForPapers() {
               <span>Shenyang · China</span>
             </figcaption>
           </div>
-        </figure>
+        </figure> */}
 
         <div className="mt-12 space-y-12">
           {/* Theme & Topics */}
