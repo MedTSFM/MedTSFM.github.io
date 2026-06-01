@@ -24,10 +24,10 @@ export function Committee() {
                 />
                 <div>
                   <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground">Bochuang Yang</h3>
-                  <p className="mt-1 text-[14px] text-muted-foreground">CAIR, HKISI-CAS, Hong Kong</p>
-                  <p className="mt-1 text-[14px] text-muted-foreground">
+                  <p className="mt-1 text-[14px] text-muted-foreground">CAIR-HKISI-CAS, Hong Kong SAR</p>
+                  {/* <p className="mt-1 text-[14px] text-muted-foreground">
                     Maintaining the workshop website and communications.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -42,10 +42,10 @@ export function Committee() {
                 />
                 <div>
                   <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground">Junyu Chen</h3>
-                  <p className="mt-1 text-[14px] text-muted-foreground">CAIR, HKISI-CAS, Hong Kong</p>
-                  <p className="mt-1 text-[14px] text-muted-foreground">
+                  <p className="mt-1 text-[14px] text-muted-foreground">CAIR-HKISI-CAS, Hong Kong SAR</p>
+                  {/* <p className="mt-1 text-[14px] text-muted-foreground">
                     Leading workshop publicity and outreach across the community.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

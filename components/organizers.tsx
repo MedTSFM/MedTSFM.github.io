@@ -9,39 +9,38 @@ type Person = {
   href?: string
   photoClass?: string
   photoFrameClass?: string
-  gridClass?: string
 }
 
 const organizers: Person[] = [
   {
     name: "Chenxi Liu",
     title: "General Chair · Assistant Professor",
-    affiliation: "CAIR, HKISI-CAS, Hong Kong",
+    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
     photo: "/organizers/chenxi-liu.png",
     href: "https://chenxiliu-hnu.github.io/homepage/",
   },
   {
     name: "Jinlin Wu",
     title: "General Chair · Assistant Professor",
-    affiliation: "CAIR, HKISI-CAS, Hong Kong",
+    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
     photo: "/organizers/jinlin-wu.png",
     href: "https://kimwu1994.github.io/jinlin.github.io/",
     photoClass: "object-contain",
     photoFrameClass: "bg-white",
   },
-  {
-    name: "Kang Zhou",
-    title: "General Chair · Assistant Professor",
-    affiliation: "CAIR, HKISI-CAS, Hong Kong",
-    photo: "/organizers/kang-zhou.png",
-    href: "https://charleskangzhou.github.io/",
-    photoClass: "object-contain",
-    photoFrameClass: "bg-white",
-  },
+  // {
+  //   name: "Kang Zhou",
+  //   title: "General Chair · Assistant Professor",
+  //   affiliation: "CAIR, HKISI-CAS, Hong Kong SAR",
+  //   photo: "/organizers/kang-zhou.png",
+  //   href: "https://charleskangzhou.github.io/",
+  //   photoClass: "object-contain",
+  //   photoFrameClass: "bg-white",
+  // },
   {
     name: "Dong Yi",
     title: "General Chair · Senior Scientist",
-    affiliation: "CAIR, HKISI-CAS, Hong Kong",
+    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
     photo: "/organizers/dong-yi.png",
     href: "https://scholar.google.com/citations?user=iga8Z4AAAAAJ&hl=en",
     photoClass: "object-contain",
@@ -50,32 +49,29 @@ const organizers: Person[] = [
   {
     name: "Zhen Lei",
     title: "General Chair · Professor, IEEE/IAPR Fellow",
-    affiliation: "CAIR, HKISI-CAS, Hong Kong",
+    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
     photo: "/organizers/zhen-lei.png",
     href: "https://scholar.google.com/citations?user=cuJ3QG8AAAAJ&hl=en",
     photoClass: "object-contain",
     photoFrameClass: "bg-white",
-    gridClass: "lg:col-start-2",
   },
   {
     name: "Hongbin Liu",
     title: "General Chair · Professor",
-    affiliation: "CAIR, HKISI-CAS, Hong Kong",
+    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
     photo: "/organizers/hongbin-liu.png",
     href: "https://scholar.google.com/citations?user=ybmGRfIAAAAJ&hl=en",
     photoClass: "object-contain",
     photoFrameClass: "bg-white",
-    gridClass: "lg:col-start-4",
   },
   {
     name: "Gaofeng Meng",
     title: "General Chair · Professor",
-    affiliation: "CAIR, HKISI-CAS, Hong Kong",
+    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
     photo: "/organizers/gaofeng-meng.png",
     href: "https://people.ucas.edu.cn/~gfmeng",
     photoClass: "object-contain",
     photoFrameClass: "bg-white",
-    gridClass: "lg:col-start-6",
   },
 ]
 
@@ -85,13 +81,11 @@ export function Organizers() {
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
         <SectionHeading eyebrow="Organizers" title="Workshop Organizers" />
 
-        <ul className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-8">
+        <ul className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3">
           {organizers.map((p) => (
             <li
               key={p.name}
-              className={["flex flex-col items-center text-center lg:col-span-2", p.gridClass]
-                .filter(Boolean)
-                .join(" ")}
+              className="flex flex-col items-center text-center"
             >
               <div
                 className={[
