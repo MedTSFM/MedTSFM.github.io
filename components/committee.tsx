@@ -10,28 +10,10 @@ export function Committee() {
   return (
     <section id="committee" className="border-b border-border/60 bg-background">
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
-        <SectionHeading eyebrow="Committee" title="Workshop Chairs and Related Workshops" />
+        <SectionHeading eyebrow="Committee & Workshops" title="Publicity and Web Chairs & Related Workshops" />
 
         <div className="mt-12 grid gap-10 md:grid-cols-2">
           <div className="space-y-8">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Web Chair</p>
-              <div className="mt-5 flex items-center gap-5">
-                <img
-                  src="/organizers/bochuang-yang.jpg"
-                  alt="Bochuang Yang"
-                  className="h-20 w-20 flex-shrink-0 rounded-full border border-border object-cover object-[90%_60%]"
-                />
-                <div>
-                  <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground">Bochuang Yang</h3>
-                  <p className="mt-1 text-[14px] text-muted-foreground">CAIR-HKISI-CAS, Hong Kong SAR</p>
-                  {/* <p className="mt-1 text-[14px] text-muted-foreground">
-                    Maintaining the workshop website and communications.
-                  </p> */}
-                </div>
-              </div>
-            </div>
-
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Publicity Chair</p>
               <div className="mt-5 flex items-center gap-5">
@@ -45,6 +27,24 @@ export function Committee() {
                   <p className="mt-1 text-[14px] text-muted-foreground">CAIR-HKISI-CAS, Hong Kong SAR</p>
                   {/* <p className="mt-1 text-[14px] text-muted-foreground">
                     Leading workshop publicity and outreach across the community.
+                  </p> */}
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Web Chair</p>
+              <div className="mt-5 flex items-center gap-5">
+                <img
+                  src="/organizers/bochuang-yang.jpg"
+                  alt="Bochuang Yang"
+                  className="h-20 w-20 flex-shrink-0 rounded-full border border-border object-cover object-[90%_60%]"
+                />
+                <div>
+                  <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground">Bochuang Yang</h3>
+                  <p className="mt-1 text-[14px] text-muted-foreground">CAIR-HKISI-CAS, Hong Kong SAR</p>
+                  {/* <p className="mt-1 text-[14px] text-muted-foreground">
+                    Maintaining the workshop website and communications.
                   </p> */}
                 </div>
               </div>
