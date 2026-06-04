@@ -50,7 +50,7 @@ export function CallForPapers() {
         <div className="mt-12 space-y-12">
           {/* Theme & Topics */}
           <div>
-            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Theme and Topics</h3>
+            <h3 className="font-['Times_New_Roman',Times,serif] text-xl font-semibold tracking-normal text-foreground md:text-2xl">Theme and Topics</h3>
             <p className="mt-3 max-w-none text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
               The workshop encourages submissions of innovative solutions for a broad range of medical time series
               intelligence and healthcare foundation models. Topics of interest include, but are not limited to:
@@ -77,7 +77,7 @@ export function CallForPapers() {
 
           {/* Objectives */}
           <div>
-            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Objectives and Goals</h3>
+            <h3 className="font-['Times_New_Roman',Times,serif] text-xl font-semibold tracking-normal text-foreground md:text-2xl">Objectives and Goals</h3>
             <div className="mt-3 max-w-none space-y-3 text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
               <p>
                 The continued digitization of healthcare and the accompanying deployment of biomedical sensing
@@ -98,7 +98,7 @@ export function CallForPapers() {
 
           {/* Submission guidelines */}
           <div>
-            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Submission Guidelines</h3>
+            <h3 className="font-['Times_New_Roman',Times,serif] text-xl font-semibold tracking-normal text-foreground md:text-2xl">Submission Guidelines</h3>
             <div className="mt-3 max-w-none space-y-3 text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
               <p>
                 Please submit papers through the official ICDM workshop submission system at{" "}
@@ -118,7 +118,7 @@ export function CallForPapers() {
                 >
                   https://www.ieee.org/conferences/publishing/templates
                 </a>
-                . Full papers cannot exceed 9 pages; short papers cannot exceed 4 pages, including references and appendices.
+                . Full papers cannot exceed 10 pages; short papers cannot exceed 4 pages, including references and any appendices.
               </p>
               <p>
                 This workshop follows a <span className="text-foreground">single-blind</span> review process. For any
@@ -135,7 +135,7 @@ export function CallForPapers() {
 
           {/* Participation */}
           <div>
-            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Participation and Selection</h3>
+            <h3 className="font-['Times_New_Roman',Times,serif] text-xl font-semibold tracking-normal text-foreground md:text-2xl">Participation and Selection</h3>
             <p className="mt-3 max-w-none text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
               The workshop welcomes researchers and practitioners from academia, industry, and hospitals interested in
               health analytics and foundation models. Submissions will be peer-reviewed based on relevance and quality.
@@ -148,7 +148,7 @@ export function CallForPapers() {
 
           {/* Important dates */}
           <div id="important-dates" className="scroll-mt-24">
-            <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Important Dates</h3>
+            <h3 className="font-['Times_New_Roman',Times,serif] text-xl font-semibold tracking-normal text-foreground md:text-2xl">Important Dates</h3>
             <ul className="mt-5 max-w-2xl divide-y divide-border rounded-md border border-border bg-card">
               {dates.map((d) => (
                 <li

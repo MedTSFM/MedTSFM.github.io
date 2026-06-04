@@ -35,7 +35,7 @@ export function SiteNav() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-[13.5px] font-medium text-muted-foreground transition-colors hover:text-primary"
+                className="text-base font-semibold text-muted-foreground transition-colors hover:text-primary"
               >
                 {l.label}
               </a>
@@ -65,7 +65,7 @@ export function SiteNav() {
               <a
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-md px-3 py-2 text-sm font-medium text-foreground/80 hover:bg-secondary hover:text-primary"
+                className="block rounded-md px-3 py-2 text-lg font-semibold text-foreground/80 hover:bg-secondary hover:text-primary"
               >
                 {l.label}
               </a>

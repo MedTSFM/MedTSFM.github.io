@@ -25,7 +25,7 @@ export function SectionHeading({
       )}
       <h2
         className={[
-          "font-sans whitespace-nowrap text-[15px] font-semibold leading-tight tracking-tight text-foreground sm:text-xl md:text-[2rem]",
+          "whitespace-nowrap font-['Times_New_Roman',Times,serif] text-[15px] font-semibold leading-tight tracking-normal text-foreground sm:text-xl md:text-[2rem]",
           titleClassName,
         ]
           .filter(Boolean)
