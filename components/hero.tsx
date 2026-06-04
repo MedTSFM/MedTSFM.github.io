@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section id="top" className="relative isolate overflow-hidden border-b border-border/60 bg-foreground text-white">
       <img
-        src="/shenyang/skyline.jpg"
+        src="/shenyang/skyline-hq.jpg"
         alt="Shenyang skyline, the host city of IEEE ICDM 2026"
         className="absolute inset-0 -z-20 h-full w-full object-cover object-[center_38%]"
       />
@@ -14,7 +14,7 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="mx-auto flex min-h-[500px] max-w-6xl flex-col items-center justify-center px-4 py-16 text-center md:px-6">
+      <div className="mx-auto flex min-h-[560px] max-w-6xl flex-col items-center justify-center px-4 py-16 text-center md:min-h-[640px] md:px-6 lg:min-h-[680px]">
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/90 md:text-base">
           MedTSFM · IEEE ICDM 2026
         </p>
