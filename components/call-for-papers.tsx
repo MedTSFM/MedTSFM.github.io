@@ -1,13 +1,13 @@
 import { SectionHeading } from "./section-heading"
 
 const topics = [
-  "Modeling of Medical Time-Series Data (EEG, EOG, EMG, ECG)",
-  "Foundation Models and LLMs for Healthcare Analytics",
-  "Spatial Time Series (Ultrasound Image and Medical Video) Analytics",
-  "Multimodal Healthcare Data Mining, Cross-Modal Representation Learning, and Alignment",
-  "Trustworthy, Interpretable, and Privacy-Preserving Healthcare Data Intelligence",
-  "Real-World Healthcare Applications, Clinical Decision Support, and Digital Health Systems",
-  "Benchmark Datasets, Surveys, Tutorials, and Open-Source Resources for Medical Time Series",
+  "Medical Time-Series Modeling (EEG, EOG, EMG, ECG)",
+  "Foundation Models and LLMs for Healthcare",
+  "Spatial Medical Time Series (Ultrasound and Video)",
+  "Multimodal Healthcare Data Mining and Alignment",
+  "Trustworthy, Interpretable, and Privacy-Preserving Health AI",
+  "Clinical Decision Support and Digital Health Applications",
+  "Benchmarks, Surveys, Tutorials, and Open Resources",
 ]
 
 const dates = [
@@ -20,14 +20,14 @@ const dates = [
 export function CallForPapers() {
   return (
     <section id="cfp" className="border-b border-border/60 bg-secondary/40">
-      <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
+      <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
         <SectionHeading
           eyebrow="Call for Papers"
           title="Submit Your Research"
           titleClassName="whitespace-nowrap text-[15px] sm:text-xl md:text-[2rem]"
-          descriptionClassName="w-full max-w-none text-[15px] leading-relaxed md:text-base"
+          descriptionClassName="w-full max-w-none text-base leading-relaxed md:text-[18px]"
           className="max-w-none"
-          description="We invite original research contributions on all aspects of medical time series analytics and foundation models. Selected papers will be invited for extended submission to a special journal issue."
+          description="We invite original research on medical time series analytics, healthcare foundation models, and their clinical applications. Selected papers will be invited for extended submission to a special journal issue."
         />
 
         {/* Subtle Shenyang accent band */}
@@ -47,20 +47,20 @@ export function CallForPapers() {
           </div>
         </figure> */}
 
-        <div className="mt-12 space-y-12">
+        <div className="mt-8 space-y-7">
           {/* Theme & Topics */}
           <div>
             <h3 className="font-['Times_New_Roman',Times,serif] text-xl font-semibold tracking-normal text-foreground md:text-2xl">Theme and Topics</h3>
-            <p className="mt-3 max-w-none text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
-              The workshop encourages submissions of innovative solutions for a broad range of medical time series
-              intelligence and healthcare foundation models. Topics of interest include, but are not limited to:
+            <p className="mt-3 max-w-none text-justify text-base leading-relaxed text-muted-foreground hyphens-auto md:text-[18px]">
+              We welcome methods, systems, benchmarks, and applications for medical time series and healthcare
+              foundation models. Topics include, but are not limited to:
             </p>
-            <ul className="mt-6 grid gap-x-10 gap-y-3 sm:grid-cols-2">
+            <ul className="mt-5 grid gap-x-10 gap-y-3 sm:grid-cols-2">
               {topics.map((t, i) => (
                 <li
                   key={t}
                   className={[
-                    "flex gap-3 text-[15px] leading-relaxed text-muted-foreground",
+                    "flex gap-3 text-base leading-relaxed text-muted-foreground md:text-[18px]",
                     i % 2 === 1 && "sm:ml-auto sm:w-[90%]",
                   ]
                     .filter(Boolean)
@@ -75,31 +75,10 @@ export function CallForPapers() {
 
           <div className="h-px w-full bg-border" aria-hidden />
 
-          {/* Objectives */}
-          <div>
-            <h3 className="font-['Times_New_Roman',Times,serif] text-xl font-semibold tracking-normal text-foreground md:text-2xl">Objectives and Goals</h3>
-            <div className="mt-3 max-w-none space-y-3 text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
-              <p>
-                The continued digitization of healthcare and the accompanying deployment of biomedical sensing
-                technologies generate increasingly massive amounts of medical time series data, fueling applications
-                such as clinical decision support, disease early-warning, and continuous patient monitoring. Mining
-                actionable insights from these heterogeneous signals poses unique challenges — irregular sampling,
-                cross-modal integration, scalability, and privacy.
-              </p>
-              <p>
-                Our objective is to provide a platform for researchers, practitioners, and clinicians from data mining,
-                machine learning, and clinical sciences to explore the opportunities offered by foundation models, and
-                to discuss their promise and ethical implications for real-world healthcare.
-              </p>
-            </div>
-          </div>
-
-          <div className="h-px w-full bg-border" aria-hidden />
-
           {/* Submission guidelines */}
           <div>
             <h3 className="font-['Times_New_Roman',Times,serif] text-xl font-semibold tracking-normal text-foreground md:text-2xl">Submission Guidelines</h3>
-            <div className="mt-3 max-w-none space-y-3 text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
+            <div className="mt-3 max-w-none space-y-3 text-justify text-base leading-relaxed text-muted-foreground hyphens-auto md:text-[18px]">
               <p>
                 Please submit papers through the official ICDM workshop submission system at{" "}
                 <a
@@ -111,12 +90,12 @@ export function CallForPapers() {
                 .
               </p>
               <p>
-                Manuscripts should be submitted in PDF format following the standard IEEE ICDM template, see{" "}
+                Manuscripts should be submitted in PDF format following the standard{" "}
                 <a
                   href="https://www.ieee.org/conferences/publishing/templates"
                   className="text-primary"
                 >
-                  https://www.ieee.org/conferences/publishing/templates
+                  IEEE ICDM template
                 </a>
                 . Full papers cannot exceed 10 pages; short papers cannot exceed 4 pages, including references and any appendices.
               </p>
@@ -126,22 +105,10 @@ export function CallForPapers() {
                 <a href="mailto:chenxi.liu@cair-cas.org.hk" className="text-primary">
                   Dr. Chenxi Liu
                 </a>
-                .
+                . A <span className="text-foreground">Best Paper Award</span> will be selected based on review and
+                presentation evaluation.
               </p>
             </div>
-          </div>
-
-          <div className="h-px w-full bg-border" aria-hidden />
-
-          {/* Participation */}
-          <div>
-            <h3 className="font-['Times_New_Roman',Times,serif] text-xl font-semibold tracking-normal text-foreground md:text-2xl">Participation and Selection</h3>
-            <p className="mt-3 max-w-none text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
-              The workshop welcomes researchers and practitioners from academia, industry, and hospitals interested in
-              health analytics and foundation models. Submissions will be peer-reviewed based on relevance and quality.
-              A <span className="text-foreground">Best Paper Award</span> will be determined
-              through peer review and presentation evaluation.
-            </p>
           </div>
 
           <div className="h-px w-full bg-border" aria-hidden />
@@ -153,7 +120,7 @@ export function CallForPapers() {
               {dates.map((d) => (
                 <li
                   key={d.label}
-                  className="grid grid-cols-[minmax(0,1fr)_max-content] items-start gap-4 px-5 py-4 text-[15px]"
+                  className="grid grid-cols-[minmax(0,1fr)_max-content] items-start gap-4 px-5 py-4 text-base md:text-[18px]"
                 >
                   <span className="text-muted-foreground">{d.label}</span>
                   <span className="whitespace-nowrap text-right font-medium text-foreground">{d.value}</span>

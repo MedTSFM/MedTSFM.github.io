@@ -9,11 +9,11 @@ const relatedWorkshops = [
 export function Committee() {
   return (
     <section id="committee" className="border-b border-border/60 bg-background">
-      <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
+      <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
         <SectionHeading eyebrow="Committee & Workshops" title="Publicity and Web Chairs & Related Workshops" />
 
-        <div className="mt-12 grid gap-10 md:grid-cols-2">
-          <div className="space-y-8">
+        <div className="mt-8 grid gap-8 md:grid-cols-2">
+          <div className="space-y-6">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Publicity Chair</p>
               <div className="mt-5 flex items-center gap-5">

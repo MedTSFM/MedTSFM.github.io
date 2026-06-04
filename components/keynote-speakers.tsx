@@ -3,7 +3,7 @@ import { SectionHeading } from "./section-heading"
 export function KeynoteSpeakers() {
   return (
     <section id="keynotes" className="border-b border-border/60 bg-background">
-      <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
+      <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
         <SectionHeading
           eyebrow="Keynotes"
           title="Keynote Speakers"
@@ -12,7 +12,7 @@ export function KeynoteSpeakers() {
           description="We are committed to inviting distinguished experts from around the globe with prestigious experience in time series analytics and AI for health."
         />
 
-        <div className="mt-14 grid gap-10 md:grid-cols-2">
+        <div className="mt-10 grid gap-8 md:grid-cols-2">
           {[1, 2].map((i) => (
             <div key={i} className="flex items-start gap-6">
               <div className="flex h-24 w-24 flex-none items-center justify-center rounded-full border border-dashed border-border bg-secondary text-muted-foreground">

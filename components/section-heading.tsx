@@ -36,15 +36,15 @@ export function SectionHeading({
       <div
         className={
           isCenter
-            ? "mx-auto mt-5 h-px w-16 bg-primary"
-            : "mt-5 h-px w-16 bg-primary"
+            ? "mx-auto mt-4 h-px w-16 bg-primary"
+            : "mt-4 h-px w-16 bg-primary"
         }
         aria-hidden
       />
       {description && (
         <p
           className={[
-            "mt-6 text-base leading-relaxed text-muted-foreground md:text-[17px]",
+            "mt-5 text-base leading-relaxed text-muted-foreground md:text-[18px]",
             !isCenter && "text-justify hyphens-auto",
             descriptionClassName,
           ]

@@ -78,10 +78,10 @@ const organizers: Person[] = [
 export function Organizers() {
   return (
     <section id="organizers" className="border-b border-border/60 bg-background">
-      <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
+      <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
         <SectionHeading eyebrow="Organizers" title="Workshop Organizers" />
 
-        <ul className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3">
+        <ul className="mt-10 grid gap-x-8 gap-y-10 sm:grid-cols-2 md:grid-cols-3">
           {organizers.map((p) => (
             <li
               key={p.name}

@@ -14,23 +14,23 @@ const program = [
 export function Schedule() {
   return (
     <section id="schedule" className="border-b border-border/60 bg-secondary/40">
-      <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
+      <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
         <SectionHeading
           eyebrow="Schedule"
           title="Tentative Program"
           descriptionClassName="max-w-none"
           className="max-w-none"
-          description="The workshop is an in-person half-day event, featuring invited talks, paper presentations, and discussions. We are committed to inviting distinguished experts from around the globe with prestigious experience in time series analytics and AI for health."
+          description="The workshop is an in-person half-day event featuring invited talks, paper presentations, and discussion."
         />
 
-        <div className="mt-12 overflow-hidden rounded-md border border-border bg-card">
+        <div className="mt-8 max-w-3xl overflow-hidden rounded-md border border-border bg-card">
           <table className="w-full border-collapse text-left">
             <thead>
               <tr className="border-b border-border bg-secondary/60 text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">
-                <th scope="col" className="w-[220px] px-6 py-4">
+                <th scope="col" className="w-[150px] px-4 py-3">
                   Time
                 </th>
-                <th scope="col" className="px-6 py-4">
+                <th scope="col" className="px-4 py-3">
                   Event
                 </th>
               </tr>
@@ -38,8 +38,8 @@ export function Schedule() {
             <tbody>
               {program.map((row) => (
                 <tr key={row.time} className="border-b border-border last:border-b-0">
-                  <td className="whitespace-nowrap px-6 py-4 font-mono text-sm text-primary">{row.time}</td>
-                  <td className="px-6 py-4 text-[15px] text-foreground">{row.event}</td>
+                  <td className="whitespace-nowrap px-4 py-3 font-mono text-base text-primary">{row.time}</td>
+                  <td className="px-4 py-3 text-base text-foreground md:text-[17px]">{row.event}</td>
                 </tr>
               ))}
             </tbody>

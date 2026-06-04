@@ -3,27 +3,23 @@ import { SectionHeading } from "./section-heading"
 export function About() {
   return (
     <section id="about" className="border-b border-border/60 bg-background">
-      <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
+      <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
         <SectionHeading eyebrow="About" title="About the Workshop" />
 
-        <div className="mt-14 grid gap-12 md:grid-cols-5 md:items-stretch">
-          <div className="space-y-5 text-pretty text-justify text-[15.5px] leading-[1.75] text-muted-foreground hyphens-auto md:col-span-3 md:text-[17px]">
+        <div className="mt-10 grid gap-8 md:grid-cols-5 md:items-stretch">
+          <div className="space-y-4 text-pretty text-justify text-base leading-[1.75] text-muted-foreground hyphens-auto md:col-span-3 md:text-[18px]">
             <p>
-              Medical time series analytics, including modeling, mining, and interpreting longitudinal physiological
-              and clinical data, plays a vital role in modern health applications. The rapid growth of digital health
-              technologies has generated large volumes of heterogeneous time series data, bringing new opportunities as
-              well as challenges such as irregular temporal sampling, multimodal integration, and privacy constraints.
+              Medical time series analytics plays a vital role in clinical decision support, early warning, and
+              continuous patient monitoring. The rapid growth of digital health technologies has generated large
+              volumes of heterogeneous physiological and clinical signals, raising challenges in irregular sampling,
+              multimodal integration, scalability, and privacy.
             </p>
             <p>
               Recently, <span className="text-foreground">foundation models</span>, including large language models and
-              multimodal pre-trained models, have emerged as a promising paradigm for addressing these challenges by
-              enabling more generalizable and scalable solutions across diverse healthcare tasks.
-            </p>
-            <p>
-              This half-day workshop at <span className="text-foreground">IEEE ICDM 2026</span> brings together
-              researchers, practitioners, and clinicians to discuss recent advances, open challenges, and practical
-              opportunities. The program features keynote talks by leading experts, peer-reviewed paper presentations,
-              and a panel discussion.
+              multimodal pre-trained models, offer a promising route toward more generalizable and scalable healthcare
+              intelligence. This half-day workshop at <span className="text-foreground">IEEE ICDM 2026</span> brings
+              together researchers, practitioners, and clinicians to discuss recent advances, open challenges, and
+              practical paths for trustworthy medical foundation models.
             </p>
           </div>
 
