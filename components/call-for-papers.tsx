@@ -51,7 +51,7 @@ export function CallForPapers() {
           {/* Theme & Topics */}
           <div>
             <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Theme and Topics</h3>
-            <p className="mt-3 max-w-none text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-3 max-w-none text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
               The workshop encourages submissions of innovative solutions for a broad range of medical time series
               intelligence and healthcare foundation models. Topics of interest include, but are not limited to:
             </p>
@@ -70,7 +70,7 @@ export function CallForPapers() {
           {/* Objectives */}
           <div>
             <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Objectives and Goals</h3>
-            <div className="mt-3 max-w-none space-y-3 text-[15px] leading-relaxed text-muted-foreground">
+            <div className="mt-3 max-w-none space-y-3 text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
               <p>
                 The continued digitization of healthcare and the accompanying deployment of biomedical sensing
                 technologies generate increasingly massive amounts of medical time series data, fueling applications
@@ -91,14 +91,14 @@ export function CallForPapers() {
           {/* Submission guidelines */}
           <div>
             <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Submission Guidelines</h3>
-            <div className="mt-3 max-w-none space-y-3 text-[15px] leading-relaxed text-muted-foreground">
+            <div className="mt-3 max-w-none space-y-3 text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
               <p>
-                Please submit the papers in EasyChair at{" "}
+                Please submit papers through the official ICDM workshop submission system at{" "}
                 <a
-                  href="https://easychair.org/conferences/?conf=medtsfmicdm2026"
+                  href="https://wi-lab.com/cyberchair/2026/icdm26/scripts/submit.php?subarea=S12&undisplay_detail=1&wh=/cyberchair/2026/icdm26/scripts/ws_submit.php"
                   className="text-primary"
                 >
-                  https://easychair.org/conferences/?conf=medtsfmicdm2026
+                  ICDM 2026 Workshop Submission Portal
                 </a>
                 .
               </p>
@@ -128,7 +128,7 @@ export function CallForPapers() {
           {/* Participation */}
           <div>
             <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Participation and Selection</h3>
-            <p className="mt-3 max-w-none text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-3 max-w-none text-justify text-[15px] leading-relaxed text-muted-foreground hyphens-auto">
               The workshop welcomes researchers and practitioners from academia, industry, and hospitals interested in
               health analytics and foundation models. Submissions will be peer-reviewed based on relevance and quality.
               A <span className="text-foreground">Best Paper Award</span> will be determined
@@ -143,9 +143,12 @@ export function CallForPapers() {
             <h3 className="font-sans text-xl font-semibold tracking-tight text-foreground md:text-2xl">Important Dates</h3>
             <ul className="mt-5 max-w-2xl divide-y divide-border rounded-md border border-border bg-card">
               {dates.map((d) => (
-                <li key={d.label} className="flex items-center justify-between gap-4 px-5 py-4 text-[15px]">
+                <li
+                  key={d.label}
+                  className="grid grid-cols-[minmax(0,1fr)_max-content] items-start gap-4 px-5 py-4 text-[15px]"
+                >
                   <span className="text-muted-foreground">{d.label}</span>
-                  <span className="font-medium text-foreground">{d.value}</span>
+                  <span className="whitespace-nowrap text-right font-medium text-foreground">{d.value}</span>
                 </li>
               ))}
             </ul>

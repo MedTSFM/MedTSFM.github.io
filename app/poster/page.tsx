@@ -130,7 +130,7 @@ export default function PosterPage() {
               <span className="h-5 w-[3px] bg-primary" aria-hidden />
               <h3 className="text-lg font-semibold tracking-tight text-foreground">About</h3>
             </div>
-            <div className="mt-4 space-y-4 text-[14.5px] leading-[1.75] text-muted-foreground">
+            <div className="mt-4 space-y-4 text-justify text-[14.5px] leading-[1.75] text-muted-foreground hyphens-auto">
               <p>
                 Medical time series analytics — modeling, mining, and interpreting longitudinal physiological and
                 clinical data — plays a vital role in modern healthcare. The rapid growth of digital health

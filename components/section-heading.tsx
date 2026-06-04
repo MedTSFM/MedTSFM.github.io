@@ -45,6 +45,7 @@ export function SectionHeading({
         <p
           className={[
             "mt-6 text-base leading-relaxed text-muted-foreground md:text-[17px]",
+            !isCenter && "text-justify hyphens-auto",
             descriptionClassName,
           ]
             .filter(Boolean)

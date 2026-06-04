@@ -7,7 +7,7 @@ export function About() {
         <SectionHeading eyebrow="About" title="About the Workshop" />
 
         <div className="mt-14 grid gap-12 md:grid-cols-5 md:items-stretch">
-          <div className="space-y-5 text-pretty text-[15.5px] leading-[1.75] text-muted-foreground md:col-span-3 md:text-[17px]">
+          <div className="space-y-5 text-pretty text-justify text-[15.5px] leading-[1.75] text-muted-foreground hyphens-auto md:col-span-3 md:text-[17px]">
             <p>
               Medical time series analytics, including modeling, mining, and interpreting longitudinal physiological
               and clinical data, plays a vital role in modern health applications. The rapid growth of digital health

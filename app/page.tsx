@@ -2,7 +2,7 @@ import { SiteNav } from "@/components/site-nav"
 import { Hero } from "@/components/hero"
 import { About } from "@/components/about"
 import { CallForPapers } from "@/components/call-for-papers"
-import { KeynoteSpeakers } from "@/components/keynote-speakers"
+// import { KeynoteSpeakers } from "@/components/keynote-speakers"
 import { Schedule } from "@/components/schedule"
 import { Organizers } from "@/components/organizers"
 import { Committee } from "@/components/committee"
@@ -15,7 +15,7 @@ export default function Page() {
       <Hero />
       <About />
       <CallForPapers />
-      <KeynoteSpeakers />
+      {/* <KeynoteSpeakers /> */}
       <Schedule />
       <Organizers />
       <Committee />
