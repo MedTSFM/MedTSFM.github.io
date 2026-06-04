@@ -56,8 +56,16 @@ export function CallForPapers() {
               intelligence and healthcare foundation models. Topics of interest include, but are not limited to:
             </p>
             <ul className="mt-6 grid gap-x-10 gap-y-3 sm:grid-cols-2">
-              {topics.map((t) => (
-                <li key={t} className="flex gap-3 text-[15px] leading-relaxed text-muted-foreground">
+              {topics.map((t, i) => (
+                <li
+                  key={t}
+                  className={[
+                    "flex gap-3 text-[15px] leading-relaxed text-muted-foreground",
+                    i % 2 === 1 && "sm:ml-auto sm:w-[90%]",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
+                >
                   <span className="mt-[0.55rem] h-1 w-1 flex-none rounded-full bg-primary" aria-hidden />
                   <span>{t}</span>
                 </li>

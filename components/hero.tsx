@@ -14,30 +14,31 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="mx-auto flex min-h-[560px] max-w-6xl flex-col items-center justify-center px-4 py-16 text-center md:min-h-[640px] md:px-6 lg:min-h-[680px]">
+      <div className="mx-auto flex min-h-[560px] max-w-7xl flex-col items-center justify-center px-4 py-16 text-center md:min-h-[640px] md:px-6 lg:min-h-[680px]">
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/90 md:text-base">
-          MedTSFM · IEEE ICDM 2026
+          IEEE ICDM 2026 Workshop
         </p>
 
-        <h1 className="mt-6 max-w-5xl font-sans text-4xl font-semibold leading-[1.08] tracking-tight text-white drop-shadow-[0_2px_18px_rgba(0,0,0,0.45)] md:text-5xl lg:text-[2.75rem]">
-          The International Workshop on Medical Time Series Analytics and Foundation Models
+        <h1 className="mt-6 max-w-7xl font-['Times_New_Roman',Times,serif] text-[3rem] font-normal leading-[1.16] tracking-normal text-white drop-shadow-[0_2px_18px_rgba(0,0,0,0.45)] md:text-[3.8rem] md:leading-[1.14] lg:text-[4.25rem]">
+          <span className="block lg:whitespace-nowrap">The International Workshop on Medical</span>
+          <span className="block lg:whitespace-nowrap">Time Series Analytics and Foundation Models</span>
         </h1>
 
         <div className="mt-8 h-px w-24 bg-white/75" aria-hidden />
 
-        <dl className="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm font-medium text-white/92 md:text-base">
-          <div className="flex items-center gap-2">
-            <Calendar className="h-4 w-4 text-white" aria-hidden />
+        <dl className="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-base font-medium text-white/92 md:text-xl">
+          <div className="flex items-center gap-2.5">
+            <Calendar className="h-5 w-5 text-white md:h-6 md:w-6" aria-hidden />
             <dt className="sr-only">Date</dt>
             <dd>November 2026</dd>
           </div>
-          <div className="flex items-center gap-2">
-            <Clock className="h-4 w-4 text-white" aria-hidden />
+          <div className="flex items-center gap-2.5">
+            <Clock className="h-5 w-5 text-white md:h-6 md:w-6" aria-hidden />
             <dt className="sr-only">Format</dt>
             <dd>Half-day, in-person</dd>
           </div>
-          <div className="flex items-center gap-2">
-            <MapPin className="h-4 w-4 text-white" aria-hidden />
+          <div className="flex items-center gap-2.5">
+            <MapPin className="h-5 w-5 text-white md:h-6 md:w-6" aria-hidden />
             <dt className="sr-only">Location</dt>
             <dd>Shenyang, China</dd>
           </div>
@@ -46,13 +47,13 @@ export function Hero() {
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <a
             href="#cfp"
-            className="inline-flex items-center justify-center rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-white/90"
+            className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-white/90 md:text-lg"
           >
             Call for Papers
           </a>
           <a
             href="#about"
-            className="inline-flex items-center justify-center rounded-md border border-white/70 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/15"
+            className="inline-flex items-center justify-center rounded-md border border-white/70 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-white/15 md:text-lg"
           >
             Read More
           </a>
