@@ -5,6 +5,7 @@ import { CallForPapers } from "@/components/call-for-papers"
 // import { KeynoteSpeakers } from "@/components/keynote-speakers"
 import { Schedule } from "@/components/schedule"
 import { Organizers } from "@/components/organizers"
+import { ProgramCommittee } from "@/components/program-committee"
 import { Committee } from "@/components/committee"
 import { SiteFooter } from "@/components/site-footer"
 
@@ -18,6 +19,7 @@ export default function Page() {
       {/* <KeynoteSpeakers /> */}
       <Schedule />
       <Organizers />
+      <ProgramCommittee />
       <Committee />
       <SiteFooter />
     </main>

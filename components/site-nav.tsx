@@ -11,7 +11,8 @@ const links = [
   // { href: "#keynotes", label: "Keynotes" },
   { href: "#schedule", label: "Schedule" },
   { href: "#organizers", label: "Organizers" },
-  { href: "#committee", label: "Committee" },
+  { href: "#program-committee", label: "Program Committee" },
+  // { href: "#committee", label: "Committee" },
 ]
 
 export function SiteNav() {
@@ -30,12 +31,12 @@ export function SiteNav() {
           </div>
         </a>
 
-        <ul className="hidden items-center gap-7 md:flex">
+        <ul className="hidden items-center gap-5 lg:flex xl:gap-7">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-base font-semibold text-muted-foreground transition-colors hover:text-primary"
+                className="text-sm font-semibold text-muted-foreground transition-colors hover:text-primary xl:text-base"
               >
                 {l.label}
               </a>
@@ -47,7 +48,7 @@ export function SiteNav() {
           type="button"
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="rounded-md p-2 text-foreground md:hidden"
+          className="rounded-md p-2 text-foreground lg:hidden"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -55,7 +56,7 @@ export function SiteNav() {
 
       <div
         className={cn(
-          "overflow-hidden border-t border-border/60 bg-background md:hidden",
+          "overflow-hidden border-t border-border/60 bg-background lg:hidden",
           open ? "max-h-96" : "max-h-0",
         )}
       >

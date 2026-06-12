@@ -4,7 +4,7 @@ import { SectionHeading } from "./section-heading"
 type Person = {
   name: string
   title: string
-  affiliation: string
+  affiliation: string | string[]
   photo: string
   href?: string
   photoClass?: string
@@ -14,15 +14,21 @@ type Person = {
 const organizers: Person[] = [
   {
     name: "Chenxi Liu",
-    title: "General Chair · Assistant Professor",
-    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
+    title: "Assistant Professor",
+    affiliation: [
+      "Centre for Artificial Intelligence and Robotics",
+      "Hong Kong Institute of Science & Innovation, CAS",
+    ],
     photo: "/organizers/chenxi-liu.png",
     href: "https://chenxiliu-hnu.github.io/homepage/",
   },
   {
     name: "Jinlin Wu",
-    title: "General Chair · Assistant Professor",
-    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
+    title: "Assistant Professor",
+    affiliation: [
+      "Centre for Artificial Intelligence and Robotics",
+      "Hong Kong Institute of Science & Innovation, CAS",
+    ],
     photo: "/organizers/jinlin-wu.png",
     href: "https://kimwu1994.github.io/jinlin.github.io/",
     photoClass: "object-contain",
@@ -39,8 +45,11 @@ const organizers: Person[] = [
   // },
   {
     name: "Dong Yi",
-    title: "General Chair · Senior Scientist",
-    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
+    title: "Professor",
+    affiliation: [
+      "Centre for Artificial Intelligence and Robotics",
+      "Hong Kong Institute of Science & Innovation, CAS",
+    ],
     photo: "/organizers/dong-yi.png",
     href: "https://scholar.google.com/citations?user=iga8Z4AAAAAJ&hl=en",
     photoClass: "object-contain",
@@ -48,8 +57,11 @@ const organizers: Person[] = [
   },
   {
     name: "Zhen Lei",
-    title: "General Chair · Professor, IEEE/IAPR Fellow",
-    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
+    title: "Professor, IEEE/IAPR Fellow",
+    affiliation: [
+      "Centre for Artificial Intelligence and Robotics",
+      "Hong Kong Institute of Science & Innovation, CAS",
+    ],
     photo: "/organizers/zhen-lei.png",
     href: "https://scholar.google.com/citations?user=cuJ3QG8AAAAJ&hl=en",
     photoClass: "object-contain",
@@ -57,8 +69,11 @@ const organizers: Person[] = [
   },
   {
     name: "Hongbin Liu",
-    title: "General Chair · Professor",
-    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
+    title: "Professor",
+    affiliation: [
+      "Centre for Artificial Intelligence and Robotics",
+      "Hong Kong Institute of Science & Innovation, CAS",
+    ],
     photo: "/organizers/hongbin-liu.png",
     href: "https://scholar.google.com/citations?user=ybmGRfIAAAAJ&hl=en",
     photoClass: "object-contain",
@@ -66,8 +81,11 @@ const organizers: Person[] = [
   },
   {
     name: "Gaofeng Meng",
-    title: "General Chair · Professor",
-    affiliation: "CAIR-HKISI-CAS, Hong Kong SAR",
+    title: "Professor",
+    affiliation: [
+      "Centre for Artificial Intelligence and Robotics",
+      "Hong Kong Institute of Science & Innovation, CAS",
+    ],
     photo: "/organizers/gaofeng-meng.png",
     href: "https://people.ucas.edu.cn/~gfmeng",
     photoClass: "object-contain",
@@ -107,7 +125,13 @@ export function Organizers() {
                 {p.title}
               </p>
               {p.affiliation && (
-                <p className="mt-2 text-[13px] leading-snug text-muted-foreground">{p.affiliation}</p>
+                <p className="mt-2 space-y-2 text-[13px] leading-snug text-muted-foreground">
+                  {(Array.isArray(p.affiliation) ? p.affiliation : [p.affiliation]).map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </p>
               )}
               {p.href && (
                 <a
