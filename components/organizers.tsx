@@ -121,7 +121,7 @@ export function Organizers() {
               </div>
 
               <h3 className="mt-5 font-sans text-lg font-semibold tracking-tight text-foreground">{p.name}</h3>
-              <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-primary">
+              <p className="mt-1 text-[11px] font-semibold tracking-[0.15em] text-primary">
                 {p.title}
               </p>
               {p.affiliation && (
