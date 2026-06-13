@@ -11,10 +11,10 @@ const topics = [
 ]
 
 const dates = [
-  { label: "Paper Submission Deadline", value: "September 5, 2026" },
-  { label: "Paper Acceptance Notification", value: "September 30, 2026" },
-  { label: "Camera-Ready Submission Deadline", value: "October 15, 2026" },
-  { label: "Workshop Date", value: "TBA" },
+  { label: "Paper Submission Deadline", value: "August 20, 2026" },
+  { label: "Paper Acceptance Notification", value: "September 18, 2026" },
+  { label: "Camera-Ready Submission Deadline", value: "October 5, 2026" },
+  { label: "Workshop Date", value: "TBA (ICDM 2026)" },
 ]
 
 export function CallForPapers() {
