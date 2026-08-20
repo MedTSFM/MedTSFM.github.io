@@ -12,8 +12,8 @@ const topics = [
 
 const dates = [
   { label: "Paper Submission Deadline", value: "September 1, 2026" },
-  { label: "Paper Acceptance Notification", value: "September 25, 2026" },
-  { label: "Camera-Ready Submission Deadline", value: "October 12, 2026" },
+  { label: "Paper Acceptance Notification", value: "September 20, 2026" },
+  { label: "Camera-Ready Submission Deadline", value: "October 5, 2026" },
   { label: "Workshop Date", value: "TBA (ICDM 2026)" },
 ]
 
