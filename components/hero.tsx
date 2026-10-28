@@ -42,6 +42,16 @@ export function Hero() {
             <dt className="sr-only">Location</dt>
             <dd>Shenyang, China</dd>
           </div>
+          <div className="flex items-center gap-2.5">
+            <img
+              src="/venue.svg"
+              alt=""
+              className="h-5 w-5 shrink-0 object-contain md:h-6 md:w-6"
+              aria-hidden="true"
+            />
+            <dt className="sr-only">Venue</dt>
+            <dd>Beijing Room, Wanda Vista Shenyang</dd>
+          </div>
         </dl>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">

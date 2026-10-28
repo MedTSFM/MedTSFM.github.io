@@ -14,7 +14,7 @@ const dates = [
   { label: "Paper Submission Deadline", value: "September 1, 2026" },
   { label: "Paper Acceptance Notification", value: "September 20, 2026" },
   { label: "Camera-Ready Submission Deadline", value: "October 5, 2026" },
-  { label: "Workshop Date", value: "November 12, 2026, 13:00 - 15:30 (China Standard Time, UTC+8)" },
+  { label: "Workshop Date", value: "November 12, 2026", time: "13:00–15:30 (UTC+8)" },
 ]
 
 export function CallForPapers() {
@@ -120,10 +120,15 @@ export function CallForPapers() {
               {dates.map((d) => (
                 <li
                   key={d.label}
-                  className="grid grid-cols-[minmax(0,1fr)_max-content] items-start gap-4 px-5 py-4 text-base md:text-[18px]"
+                  className="grid grid-cols-1 items-center gap-1 px-5 py-4 text-base sm:grid-cols-[minmax(0,1fr)_max-content] sm:gap-6 md:text-[18px]"
                 >
                   <span className="text-muted-foreground">{d.label}</span>
-                  <span className="whitespace-nowrap text-right font-medium text-foreground">{d.value}</span>
+                  <span className="min-w-0 font-medium text-foreground sm:text-right">
+                    <span className="block">{d.value}</span>
+                    {d.time && (
+                      <span className="mt-1 block text-sm font-normal text-muted-foreground md:text-base">{d.time}</span>
+                    )}
+                  </span>
                 </li>
               ))}
             </ul>
