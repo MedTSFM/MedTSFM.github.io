@@ -1,14 +1,13 @@
 import { SectionHeading } from "./section-heading"
 
 const program = [
-  { time: "9:00 - 9:10", event: "Opening and Welcome" },
-  { time: "9:10 - 9:30", event: "Keynote #1" },
-  { time: "9:30 - 10:10", event: "Session 1: Paper Presentations" },
-  { time: "10:10 - 10:30", event: "Coffee Break" },
-  { time: "10:30 - 10:50", event: "Keynote #2" },
-  { time: "10:50 - 11:30", event: "Session 2: Paper Presentations" },
-  { time: "11:30 - 11:45", event: "Panel Discussion" },
-  { time: "11:45 - 12:00", event: "Award Ceremony & Closing Remark" },
+  { time: "13:00 - 13:10", event: "Opening and Welcome" },
+  { time: "13:10 - 13:45", event: "Keynote Talk #1" },
+  { time: "13:45 - 14:10", event: "Paper Presentations - Session 1" },
+  { time: "14:10 - 14:45", event: "Keynote #Talk 2" },
+  { time: "14:45 - 15:10", event: "Paper Presentations - Session 2" },
+  { time: "15:10 - 15:20", event: "Award Ceremony" },
+  { time: "15:20 - 15:35", event: "Closing Remark" },
 ]
 
 export function Schedule() {

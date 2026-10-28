@@ -14,7 +14,7 @@ const dates = [
   { label: "Paper Submission Deadline", value: "September 1, 2026" },
   { label: "Paper Acceptance Notification", value: "September 20, 2026" },
   { label: "Camera-Ready Submission Deadline", value: "October 5, 2026" },
-  { label: "Workshop Date", value: "TBA (ICDM 2026)" },
+  { label: "Workshop Date", value: "November 12, 2026, 13:00 - 15:30 (China Standard Time, UTC+8)" },
 ]
 
 export function CallForPapers() {

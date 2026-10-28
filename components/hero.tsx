@@ -30,7 +30,7 @@ export function Hero() {
           <div className="flex items-center gap-2.5">
             <Calendar className="h-5 w-5 text-white md:h-6 md:w-6" aria-hidden />
             <dt className="sr-only">Date</dt>
-            <dd>November 2026</dd>
+            <dd>November 12, 2026</dd>
           </div>
           <div className="flex items-center gap-2.5">
             <Clock className="h-5 w-5 text-white md:h-6 md:w-6" aria-hidden />
