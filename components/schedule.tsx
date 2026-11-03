@@ -59,7 +59,6 @@ export function Schedule() {
         <SectionHeading
           eyebrow="Schedule"
           title="Workshop Program"
-          titleClassName="text-2xl! sm:text-3xl! md:text-[2rem]!"
           descriptionClassName="max-w-none text-left!"
           className="max-w-none"
           description="The workshop is an in-person half-day event featuring invited talks, paper presentations, and discussion."
