@@ -6,8 +6,8 @@ const topics = [
   "Spatial Medical Time Series (Ultrasound and Video)",
   "Multimodal Healthcare Data Mining and Alignment",
   "Trustworthy, Interpretable, and Privacy-Preserving Health AI",
-  "Clinical Decision Support and Digital Health Applications",
   "Benchmarks, Surveys, Tutorials, and Open Resources",
+  "Clinical Decision Support and Digital Health Applications",
 ]
 
 const dates = [
