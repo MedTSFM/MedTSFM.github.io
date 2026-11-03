@@ -43,7 +43,7 @@ export function SiteFooter() {
               Call for Papers Poster
             </a>
             <span>
-              Website maintained by <span className="text-foreground">Bochuang Yang</span> (Web Chair).
+              Website maintained by <span className="text-foreground">Bochuang Yang and Junyu Chen</span>.
             </span>
           </p>
         </div>
