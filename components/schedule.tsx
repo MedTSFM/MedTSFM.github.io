@@ -17,15 +17,15 @@ const program: ProgramItem[] = [
     papers: [
       {
         title: "IARA: Irregularity-Aware Representation Adaptation for Clinical Time Series",
-        authors: "Shengbin Liu, Yuchen Fang, Yanjun Qin, and Xiaoming Tao",
+        authors: "Shengbin Liu, Xinjiang University",
       },
       {
         title: "SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting",
-        authors: "Tuan-Binh Tran, Dat Nguyen Cong, Duc-Trong Le, Thanh Trung Huynh, Tung Kieu",
+        authors: "Tuan-Binh Tran, VinUniversity",
       },
       {
         title: "LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics",
-        authors: "Mariia Baranova, Adrien Petralia, Etienne Le Naour, Nathan Etourneau, Guillaume Hoffmann, Themis Palpanas",
+        authors: "Mariia Baranova, EDF R&D & Université Paris Cité",
       },
     ],
   },
@@ -37,15 +37,15 @@ const program: ProgramItem[] = [
     papers: [
       {
         title: "ZeEEG: Zentropy-Guided Conditional EEG Generation for Sleep Stage Augmentation with Local Semantic Uncertainty",
-        authors: "Jiacheng Lyu, Feiya Xiang, and Edgar Lobaton",
+        authors: "Jiacheng Lyu, Xidian University",
       },
       {
         title: "Reference-Calibrated Residual Auditing for Backdoor Inspection in Time-Series Forecasting",
-        authors: "Jian Liu, Pengzhi Zhong, Tianshuo Wei, Chenbin Zhang, Maolin Wang",
+        authors: "Jian Liu, Beihang University",
       },
       {
         title: "Privacy-Preserving Multi-View Healthcare Data Imputation via Adaptive Diffusion",
-        authors: "Huanchang Ma, Shuo Huang, Jiaming He, Jian Gao, Yujin Huang, Xin Zheng",
+        authors: "Huanchang Ma, Northeast Normal University",
       },
     ],
   },
