@@ -9,12 +9,16 @@ type ProgramItem = {
 }
 
 const program: ProgramItem[] = [
-  { start: "13:00", end: "13:20", event: "Opening and Welcome" },
+  { start: "13:00", end: "13:10", event: "Opening and Welcome" },
   {
-    start: "13:20",
+    start: "13:10",
     end: "14:00",
     event: "Paper Presentations — Session 1",
     papers: [
+      {
+        title: "Alert-List Concordance for Evaluating Imputation Strategies in ICU Sepsis Prediction",
+        authors: "Priyanka Siddappa, University of Massachusetts Lowell",
+      },
       {
         title: "IARA: Irregularity-Aware Representation Adaptation for Clinical Time Series",
         authors: "Shengbin Liu, Xinjiang University",
@@ -24,32 +28,40 @@ const program: ProgramItem[] = [
         authors: "Tuan-Binh Tran, VinUniversity",
       },
       {
-        title: "LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics",
-        authors: "Mariia Baranova, EDF R&D & Université Paris Cité",
+        title: "Privacy-Preserving Multi-View Healthcare Data Imputation via Adaptive Diffusion",
+        authors: "Huanchang Ma, Northeast Normal University",
+      },
+      {
+        title: "Reference-Calibrated Residual Auditing for Backdoor Inspection in Time-Series Forecasting",
+        authors: "Jian Liu, Beihang University",
       },
     ],
   },
   { start: "14:00", end: "14:35", event: "Keynote Talk by Prof. Jiyang Pan" },
   {
     start: "14:35",
-    end: "15:15",
+    end: "15:20",
     event: "Paper Presentations — Session 2",
     papers: [
+      {
+        title: "CheXFuse: Guided Differential Joint Attention Fusion for Robust Multimodal Chest X-Ray Classification in Data-Scarce Medical Settings",
+        authors: "Muntaqim Ahmed Raju, University of Massachusetts Lowell",
+      },
       {
         title: "ZeEEG: Zentropy-Guided Conditional EEG Generation for Sleep Stage Augmentation with Local Semantic Uncertainty",
         authors: "Jiacheng Lyu, Xidian University",
       },
       {
-        title: "Reference-Calibrated Residual Auditing for Backdoor Inspection in Time-Series Forecasting",
-        authors: "Jian Liu, Beihang University",
+        title: "LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics",
+        authors: "Mariia Baranova, EDF R&D; Université Paris Cité",
       },
       {
-        title: "Privacy-Preserving Multi-View Healthcare Data Imputation via Adaptive Diffusion",
-        authors: "Huanchang Ma, Northeast Normal University",
+        title: "Beyond Accuracy: Evaluating Performance and Energy Trade-offs in EEG-Based ADHD Classification",
+        authors: "Mariusz Pelc, Wrocław University of Science and Technology",
       },
     ],
   },
-  { start: "15:15", end: "15:30", event: "Award Ceremony and Closing Remark" },
+  { start: "15:20", end: "15:30", event: "Award Ceremony and Closing Remarks" },
 ]
 
 export function Schedule() {
