@@ -5,7 +5,7 @@ type ProgramItem = {
   start: string
   end: string
   event: string
-  papers?: { title: string; authors: string }[]
+  papers?: { title: string; authors: string; sourceWorkshop?: string }[]
 }
 
 const program: ProgramItem[] = [
@@ -18,6 +18,7 @@ const program: ProgramItem[] = [
       {
         title: "Alert-List Concordance for Evaluating Imputation Strategies in ICU Sepsis Prediction",
         authors: "Priyanka Siddappa, University of Massachusetts Lowell",
+        sourceWorkshop: "DMBIH",
       },
       {
         title: "IARA: Irregularity-Aware Representation Adaptation for Clinical Time Series",
@@ -46,6 +47,7 @@ const program: ProgramItem[] = [
       {
         title: "CheXFuse: Guided Differential Joint Attention Fusion for Robust Multimodal Chest X-Ray Classification in Data-Scarce Medical Settings",
         authors: "Muntaqim Ahmed Raju, University of Massachusetts Lowell",
+        sourceWorkshop: "DMBIH",
       },
       {
         title: "ZeEEG: Zentropy-Guided Conditional EEG Generation for Sleep Stage Augmentation with Local Semantic Uncertainty",
@@ -58,6 +60,7 @@ const program: ProgramItem[] = [
       {
         title: "Beyond Accuracy: Evaluating Performance and Energy Trade-offs in EEG-Based ADHD Classification",
         authors: "Mariusz Pelc, Wrocław University of Science and Technology",
+        sourceWorkshop: "DMBIH",
       },
     ],
   },
@@ -123,6 +126,16 @@ export function Schedule() {
                           <li key={paper.title} className="py-3 first:pt-0 last:pb-0">
                             <h4 className="text-[15px] font-semibold italic leading-normal text-foreground md:text-base">
                               {paper.title}
+                              {paper.sourceWorkshop && (
+                                <span
+                                  className="ml-2 inline-flex rounded border border-primary/20 bg-primary/10 px-1.5 py-0.5 align-middle text-[10px] font-semibold not-italic leading-none tracking-wide text-primary"
+                                  title={`Transferred from the ${paper.sourceWorkshop} workshop`}
+                                >
+                                  <span className="sr-only"> — transferred from the </span>
+                                  {paper.sourceWorkshop}
+                                  <span className="sr-only"> workshop</span>
+                                </span>
+                              )}
                             </h4>
                             <p className="mt-1 text-sm leading-normal text-muted-foreground md:text-[15px]">
                               {paper.authors}
