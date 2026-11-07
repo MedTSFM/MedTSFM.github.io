@@ -51,7 +51,7 @@ const program: ProgramItem[] = [
       },
       {
         title: "ZeEEG: Zentropy-Guided Conditional EEG Generation for Sleep Stage Augmentation with Local Semantic Uncertainty",
-        authors: "Jiacheng Lyu, Xidian University",
+        authors: "Jiacheng Lyu, Xidian University; Heriot-Watt University",
       },
       {
         title: "LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics",
