@@ -38,7 +38,7 @@ const program: ProgramItem[] = [
       },
     ],
   },
-  { start: "14:00", end: "14:35", event: "Keynote Talk by Prof. Jiyang Pan" },
+  { start: "14:00", end: "14:35", event: "Keynote Talk by Prof. Yujun Yan" },
   {
     start: "14:35",
     end: "15:20",
