@@ -59,7 +59,7 @@ const program: ProgramItem[] = [
       },
       {
         title: "Beyond Accuracy: Evaluating Performance and Energy Trade-offs in EEG-Based ADHD Classification",
-        authors: "Mariusz Pelc, Wrocław University of Science and Technology",
+        authors: "Aleksandra Kawala-Sterniuk, Wrocław University of Science and Technology",
         sourceWorkshop: "DMBIH",
       },
     ],
