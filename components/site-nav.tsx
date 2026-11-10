@@ -10,6 +10,7 @@ const links = [
   { href: "#important-dates", label: "Important Dates" },
   // { href: "#keynotes", label: "Keynotes" },
   { href: "#schedule", label: "Schedule" },
+  { href: "#invited-speakers", label: "Keynote Speakers" },
   { href: "#organizers", label: "Organizers" },
   { href: "#program-committee", label: "Program Committee" },
   // { href: "#committee", label: "Committee" },

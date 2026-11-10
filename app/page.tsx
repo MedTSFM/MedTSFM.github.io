@@ -4,6 +4,7 @@ import { About } from "@/components/about"
 import { CallForPapers } from "@/components/call-for-papers"
 // import { KeynoteSpeakers } from "@/components/keynote-speakers"
 import { Schedule } from "@/components/schedule"
+import { InvitedSpeakers } from "@/components/invited-speakers"
 import { Organizers } from "@/components/organizers"
 import { ProgramCommittee } from "@/components/program-committee"
 import { Committee } from "@/components/committee"
@@ -18,6 +19,7 @@ export default function Page() {
       <CallForPapers />
       {/* <KeynoteSpeakers /> */}
       <Schedule />
+      <InvitedSpeakers />
       <Organizers />
       <ProgramCommittee />
       <Committee />
