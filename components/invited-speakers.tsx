@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react"
 import { SectionHeading } from "./section-heading"
 
 type Speaker = {
@@ -5,6 +6,7 @@ type Speaker = {
   title?: string
   affiliation: string[]
   photo: string
+  href: string
 }
 
 const speakers: Speaker[] = [
@@ -13,6 +15,7 @@ const speakers: Speaker[] = [
     title: "Assistant Professor",
     affiliation: ["Department of Computer Science", "Dartmouth College"],
     photo: "/speakers/yujun-yan.png",
+    href: "https://sites.google.com/umich.edu/yujunyan/home",
   },
   {
     name: "Jiyang Pan",
@@ -22,6 +25,7 @@ const speakers: Speaker[] = [
       "The First Affiliated Hospital of Jinan University",
     ],
     photo: "/speakers/jiyang-pan.png",
+    href: "https://faculty.jnu.edu.cn/lcyxy/pjy_en/list.psp",
   },
 ]
 
@@ -59,6 +63,15 @@ export function InvitedSpeakers() {
                   </span>
                 ))}
               </p>
+              <a
+                href={speaker.href}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-4 inline-flex h-9 items-center gap-2 rounded-sm border border-border px-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-foreground transition-colors hover:bg-secondary"
+              >
+                <ExternalLink className="h-3.5 w-3.5" />
+                <span>Homepage</span>
+              </a>
             </li>
           ))}
         </ul>
