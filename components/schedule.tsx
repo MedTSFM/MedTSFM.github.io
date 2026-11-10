@@ -10,61 +10,65 @@ type ProgramItem = {
 
 const program: ProgramItem[] = [
   { start: "13:00", end: "13:10", event: "Opening and Welcome" },
+  { start: "13:10", end: "13:50", event: "Keynote Talk by Prof. Yujun Yan" },
   {
-    start: "13:10",
-    end: "14:00",
+    start: "13:50",
+    end: "14:35",
     event: "Paper Presentations — Session 1",
     papers: [
-      {
-        title: "Alert-List Concordance for Evaluating Imputation Strategies in ICU Sepsis Prediction",
-        authors: "Priyanka Siddappa, University of Massachusetts Lowell",
-        sourceWorkshop: "DMBIH",
-      },
       {
         title: "IARA: Irregularity-Aware Representation Adaptation for Clinical Time Series",
         authors: "Shengbin Liu, Xinjiang University",
       },
       {
-        title: "SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting",
-        authors: "Tuan-Binh Tran, VinUniversity",
+        title: "Reference-Calibrated Residual Auditing for Backdoor Inspection in Time-Series Forecasting",
+        authors: "Jian Liu, Beihang University",
       },
       {
         title: "Privacy-Preserving Multi-View Healthcare Data Imputation via Adaptive Diffusion",
         authors: "Huanchang Ma, Northeast Normal University",
       },
       {
-        title: "Reference-Calibrated Residual Auditing for Backdoor Inspection in Time-Series Forecasting",
-        authors: "Jian Liu, Beihang University",
+        title: "SCENARIODIFF: A Scenario-level Guidance Framework for Multimodal Time Series Forecasting",
+        authors: "Tuan-Binh Tran, VinUniversity",
       },
     ],
   },
-  { start: "14:00", end: "14:35", event: "Keynote Talk by Prof. Yujun Yan" },
   {
     start: "14:35",
     end: "15:20",
     event: "Paper Presentations — Session 2",
     papers: [
       {
-        title: "CheXFuse: Guided Differential Joint Attention Fusion for Robust Multimodal Chest X-Ray Classification in Data-Scarce Medical Settings",
-        authors: "Muntaqim Ahmed Raju, University of Massachusetts Lowell",
-        sourceWorkshop: "DMBIH",
-      },
-      {
         title: "ZeEEG: Zentropy-Guided Conditional EEG Generation for Sleep Stage Augmentation with Local Semantic Uncertainty",
-        authors: "Jiacheng Lyu, Xidian University; Heriot-Watt University",
+        authors: "Jiacheng Lyu, Xidian University",
       },
       {
         title: "LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics",
-        authors: "Mariia Baranova, EDF R&D; Université Paris Cité",
+        authors: "Mariia Baranova, EDF R&D & Université Paris Cité",
       },
       {
         title: "Beyond Accuracy: Evaluating Performance and Energy Trade-offs in EEG-Based ADHD Classification",
         authors: "Aleksandra Kawala-Sterniuk, Wrocław University of Science and Technology",
         sourceWorkshop: "DMBIH",
       },
+      {
+        title: "CheXFuse: Guided Differential Joint Attention Fusion for Robust Multimodal Chest X-Ray Classification in Data-Scarce Medical Settings",
+        authors: "Muntaqim Ahmed Raju, University of Massachusetts Lowell",
+        sourceWorkshop: "DMBIH",
+      },
+      {
+        title: "Alert-List Concordance for Evaluating Imputation Strategies in ICU Sepsis Prediction",
+        authors: "Priyanka Siddappa, University of Massachusetts Lowell",
+        sourceWorkshop: "DMBIH",
+      },
     ],
   },
-  { start: "15:20", end: "15:30", event: "Award Ceremony and Closing Remarks" },
+  {
+    start: "15:20",
+    end: "15:30",
+    event: "Award Ceremony, Closing Remark and Workshop Group Photo (all participants)",
+  },
 ]
 
 export function Schedule() {
