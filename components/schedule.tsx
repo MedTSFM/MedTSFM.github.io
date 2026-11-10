@@ -67,7 +67,7 @@ const program: ProgramItem[] = [
   {
     start: "15:20",
     end: "15:30",
-    event: "Award Ceremony, Closing Remark and Workshop Group Photo (all participants)",
+    event: "Award Ceremony and Closing Remark",
   },
 ]
 
