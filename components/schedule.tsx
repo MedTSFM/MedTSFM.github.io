@@ -41,11 +41,11 @@ const program: ProgramItem[] = [
     papers: [
       {
         title: "ZeEEG: Zentropy-Guided Conditional EEG Generation for Sleep Stage Augmentation with Local Semantic Uncertainty",
-        authors: "Jiacheng Lyu, Xidian University",
+        authors: "Jiacheng Lyu, Xidian University; Heriot-Watt University",
       },
       {
         title: "LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics",
-        authors: "Mariia Baranova, EDF R&D & Université Paris Cité",
+        authors: "Mariia Baranova, EDF R&D; Université Paris Cité",
       },
       {
         title: "Beyond Accuracy: Evaluating Performance and Energy Trade-offs in EEG-Based ADHD Classification",
