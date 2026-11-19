@@ -2,8 +2,8 @@ import { Trophy } from "lucide-react"
 import { SectionHeading } from "./section-heading"
 
 const awardColors = {
-  "Best Paper": "border-amber-300 bg-amber-100 text-amber-900 dark:border-amber-700 dark:bg-amber-950 dark:text-amber-200",
-  "Best Paper Runner-Up": "border-slate-300 bg-slate-100 text-slate-700 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200",
+  "Best Paper Award": "border-amber-300 bg-amber-100 text-amber-900 dark:border-amber-700 dark:bg-amber-950 dark:text-amber-200",
+  "Best Paper Runner-Up Award": "border-slate-300 bg-slate-100 text-slate-700 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200",
 }
 
 type ProgramItem = {
@@ -27,7 +27,7 @@ const program: ProgramItem[] = [
       {
         title: "IARA: Irregularity-Aware Representation Adaptation for Clinical Time Series",
         authors: "Shengbin Liu, Xinjiang University",
-        award: "Best Paper",
+        award: "Best Paper Award",
       },
       {
         title: "Reference-Calibrated Residual Auditing for Backdoor Inspection in Time-Series Forecasting",
@@ -51,7 +51,7 @@ const program: ProgramItem[] = [
       {
         title: "ZeEEG: Zentropy-Guided Conditional EEG Generation for Sleep Stage Augmentation with Local Semantic Uncertainty",
         authors: "Jiacheng Lyu, Xidian University; Heriot-Watt University",
-        award: "Best Paper Runner-Up",
+        award: "Best Paper Runner-Up Award",
       },
       {
         title: "LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics",
