@@ -1,12 +1,20 @@
-// import { Calendar, Clock } from "lucide-react"
+import { Trophy } from "lucide-react"
 import { SectionHeading } from "./section-heading"
+
+const awardColors = {
+  "Best Paper": "border-amber-300 bg-amber-100 text-amber-900 dark:border-amber-700 dark:bg-amber-950 dark:text-amber-200",
+  "Best Paper Runner-Up": "border-slate-300 bg-slate-100 text-slate-700 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200",
+}
 
 type ProgramItem = {
   start: string
   end: string
   event: string
-  papers?: { title: string; authors: string; sourceWorkshop?: string }[]
+  papers?: { title: string; authors: string; sourceWorkshop?: string; award?: keyof typeof awardColors }[]
 }
+
+const paperBadgeClassName =
+  "ml-2 inline-flex rounded border border-primary/20 bg-primary/10 px-1.5 py-0.5 align-middle text-[10px] font-semibold not-italic leading-none tracking-wide text-primary"
 
 const program: ProgramItem[] = [
   { start: "13:00", end: "13:10", event: "Opening and Welcome" },
@@ -19,6 +27,7 @@ const program: ProgramItem[] = [
       {
         title: "IARA: Irregularity-Aware Representation Adaptation for Clinical Time Series",
         authors: "Shengbin Liu, Xinjiang University",
+        award: "Best Paper",
       },
       {
         title: "Reference-Calibrated Residual Auditing for Backdoor Inspection in Time-Series Forecasting",
@@ -42,6 +51,7 @@ const program: ProgramItem[] = [
       {
         title: "ZeEEG: Zentropy-Guided Conditional EEG Generation for Sleep Stage Augmentation with Local Semantic Uncertainty",
         authors: "Jiacheng Lyu, Xidian University; Heriot-Watt University",
+        award: "Best Paper Runner-Up",
       },
       {
         title: "LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics",
@@ -130,9 +140,18 @@ export function Schedule() {
                           <li key={paper.title} className="py-3 first:pt-0 last:pb-0">
                             <h4 className="text-[15px] font-semibold italic leading-normal text-foreground md:text-base">
                               {paper.title}
+                              {paper.award && (
+                                <span
+                                  className={`ml-2 inline-flex items-center gap-1 whitespace-nowrap rounded border px-2 py-0.5 align-middle text-[11px] font-semibold not-italic leading-tight ${awardColors[paper.award]}`}
+                                >
+                                  <span className="sr-only"> — </span>
+                                  <Trophy aria-hidden="true" className="size-3 shrink-0" />
+                                  {paper.award}
+                                </span>
+                              )}
                               {paper.sourceWorkshop && (
                                 <span
-                                  className="ml-2 inline-flex rounded border border-primary/20 bg-primary/10 px-1.5 py-0.5 align-middle text-[10px] font-semibold not-italic leading-none tracking-wide text-primary"
+                                  className={paperBadgeClassName}
                                   title={`Transferred from the ${paper.sourceWorkshop} workshop`}
                                 >
                                   <span className="sr-only"> — transferred from the </span>
